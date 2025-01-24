@@ -97,13 +97,13 @@ const UserHeader = () => {
                   Sign In
                 </h1>
                 <p className=" cursor-pointer text-xs text-gray-600">
-                  for FREE Shipping
+                  for FREE Shipping 🚚
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="flex gap-6 items-center">
+          <div className="flex gap-4 sm:gap-6 items-center">
             <div className="relative cursor-pointer">
               <svg viewBox="0 0 24 24" className="w-6 h-6 text-gray-700">
                 <path d="M22 3.1c2.7 2.2 2.6 7.2.1 9.7-2.2 2.8-7.4 8.1-9.3 9.6-.5.4-1.1.4-1.6 0-1.8-1.5-7-6.8-9.2-9.6-2.6-2.6-2.7-7.6 0-9.7C4.6.5 9.7.7 12 4.2 14.3.8 19.3.5 22 3.1zm-.7.8c-2.4-2.4-7.2-2-8.9 1.5-.1.3-.4.4-.7.2-.1 0-.2-.1-.2-.2-1.6-3.5-6.5-4-8.9-1.5C.4 5.6.5 10 2.7 12.2c2.2 2.7 7.3 8 9.1 9.4.1.1.2.1.3 0 1.8-1.4 6.9-6.7 9.1-9.5 2.3-2.1 2.4-6.5.1-8.2z"></path>
@@ -123,52 +123,157 @@ const UserHeader = () => {
         </div>
       </div>
 
-<div className="bg-black h-10 relative hidden sm:block">
-<div className="bg-black h-10 hidden sm:block mx-auto px-8 max-w-screen-xl">
-    <ul className="flex justify-between items-center h-full">
-      <li className="text-white">
-        <a href="" className="inline-block">New</a>
-      </li>
-      <li className="text-white">
-        <a href="" className="inline-block">Brands</a>
-      </li>
-      <li className="text-white">
-        <a href="" className="inline-block">Makeup</a>
-      </li>
-      <li className="text-white">
-        <a href="" className="inline-block">Skincare</a>
-      </li>
-      <li className="text-white">
-        <a href="" className="inline-block">Hair</a>
-      </li>
-      <li className="text-white">
-        <a href="" className="inline-block">Fragrance</a>
-      </li>
-      <li className="text-white">
-        <a href="" className="inline-block">Tools & Brushes</a>
-      </li>
-      <li className="text-white">
-        <a href="" className="inline-block">Bath & Body</a>
-      </li>
-      <li className="text-white">
-        <a href="" className="inline-block">Mini Size</a>
-      </li>
-      <li className="text-white">
-        <a href="" className="inline-block">Beauty Under $20</a>
-      </li>
-      <li className="text-white">
-        <a href="" className="inline-block">Gifts & Gift Cards</a>
-      </li>
-      <li className="text-white">
-        <a href="" className="inline-block">Sale & Offers</a>
-      </li>
-    </ul>
-  </div>
-</div>
+      <div className="block mx-auto px-4 max-w-screen-xl sm:hidden py-2 border-b border-gray-200 container flex justify-between items-center">
+        <div>
+          <h1 className="text-sm font-semibold">
+            Sign In for FREE Shipping 🚚
+          </h1>
+          <p className="text-sm">
+            Dont't have an account?{" "}
+            <a className="text-sm text-blue-500 underline" href="">
+              Create an account
+            </a>
+          </p>
+        </div>
+        <div>
+          <button className="hover:bg-gray-500 transition ease-in-out cursor-pointer px-8 py-1.5 text-sm rounded-full font-semibold bg-black text-white">
+            Sign In
+          </button>
+        </div>
+      </div>
+      <div
+        className=" block  sm:hidden py-2 border-b border-gray-200 w-full overflow-x-auto overflow-y-hidden whitespace-nowrap scrollbar-thin"
+        onWheel={(e) => handleShiftScroll(e)}
+        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+      >
+        <div
+          className="transition hover:text-gray-500 ease-in-out cursor-pointer mx-1 text-xs inline-block bg-white shadow-md px-3 py-1.5 rounded-sm"
+          style={{ boxShadow: "0 1px 2px 2px rgba(0, 0, 0, 0.1)" }}
+        >
+          New
+        </div>
+        <div
+          className="transition hover:text-gray-500 ease-in-out cursor-pointer mx-1 text-xs inline-block bg-white shadow-md px-3 py-1.5 rounded-sm"
+          style={{ boxShadow: "0 1px 2px 2px rgba(0, 0, 0, 0.1)" }}
+        >
+          Brands
+        </div>
+        <div
+          className="transition hover:text-gray-500 ease-in-out cursor-pointer mx-1 text-xs inline-block bg-white shadow-md px-3 py-1.5 rounded-sm"
+          style={{ boxShadow: "0 1px 2px 2px rgba(0, 0, 0, 0.1)" }}
+        >
+          Makeup
+        </div>
+        <div
+          className="transition hover:text-gray-500 ease-in-out cursor-pointer mx-1 text-xs inline-block bg-white shadow-md px-3 py-1.5 rounded-sm"
+          style={{ boxShadow: "0 1px 2px 2px rgba(0, 0, 0, 0.1)" }}
+        >
+          Skincare
+        </div>
+        <div
+          className="transition hover:text-gray-500 ease-in-out cursor-pointer mx-1 text-xs inline-block bg-white shadow-md px-3 py-1.5 rounded-sm"
+          style={{ boxShadow: "0 1px 2px 2px rgba(0, 0, 0, 0.1)" }}
+        >
+          Hair
+        </div>
+        <div
+          className="transition hover:text-gray-500 ease-in-out cursor-pointer mx-1 text-xs inline-block bg-white shadow-md px-3 py-1.5 rounded-sm"
+          style={{ boxShadow: "0 1px 2px 2px rgba(0, 0, 0, 0.1)" }}
+        >
+          Fragrance
+        </div>
+        <div
+          className="transition hover:text-gray-500 ease-in-out cursor-pointer mx-1 text-xs inline-block bg-white shadow-md px-3 py-1.5 rounded-sm"
+          style={{ boxShadow: "0 1px 2px 2px rgba(0, 0, 0, 0.1)" }}
+        >
+          Tools & Brushes
+        </div>
+        <div
+          className="transition hover:text-gray-500 ease-in-out cursor-pointer mx-1 text-xs inline-block bg-white shadow-md px-3 py-1.5 rounded-sm"
+          style={{ boxShadow: "0 1px 2px 2px rgba(0, 0, 0, 0.1)" }}
+        >
+          Bath & Body
+        </div>
+        <div
+          className="transition hover:text-gray-500 ease-in-out cursor-pointer mx-1 text-xs inline-block bg-white shadow-md px-3 py-1.5 rounded-sm"
+          style={{ boxShadow: "0 1px 2px 2px rgba(0, 0, 0, 0.1)" }}
+        >
+          Mini Size
+        </div>
+        <div
+          className="transition hover:text-gray-500 ease-in-out cursor-pointer mx-1 text-xs inline-block bg-white shadow-md px-3 py-1.5 rounded-sm"
+          style={{ boxShadow: "0 1px 2px 2px rgba(0, 0, 0, 0.1)" }}
+        >
+          Gifts & Gift Cards
+        </div>
+      </div>
 
-
-
-
+      <div className="bg-black h-10 relative hidden sm:block">
+        <div className="bg-black h-10 hidden sm:block mx-auto px-8 max-w-screen-xl">
+          <ul className="flex justify-between items-center h-full">
+            <li className="text-white">
+              <a href="" className="inline-block">
+                New
+              </a>
+            </li>
+            <li className="text-white">
+              <a href="" className="inline-block">
+                Brands
+              </a>
+            </li>
+            <li className="text-white">
+              <a href="" className="inline-block">
+                Makeup
+              </a>
+            </li>
+            <li className="text-white">
+              <a href="" className="inline-block">
+                Skincare
+              </a>
+            </li>
+            <li className="text-white">
+              <a href="" className="inline-block">
+                Hair
+              </a>
+            </li>
+            <li className="text-white">
+              <a href="" className="inline-block">
+                Fragrance
+              </a>
+            </li>
+            <li className="text-white">
+              <a href="" className="inline-block">
+                Tools & Brushes
+              </a>
+            </li>
+            <li className="text-white">
+              <a href="" className="inline-block">
+                Bath & Body
+              </a>
+            </li>
+            <li className="text-white">
+              <a href="" className="inline-block">
+                Mini Size
+              </a>
+            </li>
+            <li className="text-white">
+              <a href="" className="inline-block">
+                Beauty Under $20
+              </a>
+            </li>
+            <li className="text-white">
+              <a href="" className="inline-block">
+                Gifts & Gift Cards
+              </a>
+            </li>
+            <li className="text-white">
+              <a href="" className="inline-block">
+                Sale & Offers
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };
