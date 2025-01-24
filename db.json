@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Hydrating Face Cream",
+      "description": "A nourishing cream for dry skin.",
+      "image": "https://picsum.photos/200/300"
+    },
+    {
+      "id": "39fd",
+      "name": "new  update ",
+      "description": "desc 3",
+      "image": "https://picsum.photos/200/200"
+    }
+  ]
+}
