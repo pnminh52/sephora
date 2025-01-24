@@ -2,8 +2,8 @@ import React from "react";
 
 const UserNavbar = () => {
   return (
-    <div>
-      <ul className="container flex justify-between items-center mx-auto border-t border-gray-300 sm:hidden  max-w-screen-xl  px-4 bg-white h-20 z-999  absolute bottom-0">
+    <div >
+      <ul className="fixed z-999 bottom-0 container flex justify-between items-center mx-auto border-t border-gray-300 sm:hidden  max-w-screen-xl  px-4 bg-white h-20 ">
         <li className="cursor-pointer">
           <svg className="w-7 h-7  mx-auto" viewBox="0 0 24 24">
             <path d="M22.338 7.854v-.001l-9.516-6.404a1.494 1.494 0 0 0-1.676 0L1.661 7.842A1.5 1.5 0 0 0 1 9.085V22.5A1.5 1.5 0 0 0 2.5 24h6a1.5 1.5 0 0 0 1.5-1.5v-7a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v7a1.5 1.5 0 0 0 1.5 1.5h6a1.5 1.5 0 0 0 1.5-1.5V9.098c0-.5-.248-.966-.662-1.244Z"></path>
