@@ -12,7 +12,7 @@ const UserHeader = () => {
       </div>
 
       <div class="mx-auto max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-gray-200">
-        <div class="flex h-14 sm:h-14 lg:h-20 px-2  items-center justify-between">
+        <div class="flex h-14 sm:h-14 lg:h-20   items-center justify-between">
           <div class="md:flex md:items-center md:gap-12">
             <a class="block text-teal-600" href="#">
               <span class="sr-only">Home</span>
@@ -60,48 +60,114 @@ const UserHeader = () => {
               </div>
 
               <div>
-                <h1 className=" cursor-pointer text-sm font-semibold">Stores & Services</h1>
-                <p className=" cursor-pointer text-xs text-gray-600">Choose Your Store</p>
+                <h1 className=" cursor-pointer text-sm font-semibold">
+                  Stores & Services
+                </h1>
+                <p className=" cursor-pointer text-xs text-gray-600">
+                  Choose Your Store
+                </p>
               </div>
             </div>
             <div className="hidden sm:flex items-center gap-x-3 px-4">
               <div>
-                <svg viewBox="0 0 24 24" className=" cursor-pointer w-7 h-7"><path d="M3.5 3.914H3v-.5a.5.5 0 0 0-1 0v.5h-.5a.5.5 0 1 0 0 1H2v.5a.5.5 0 1 0 1 0v-.5h.5a.5.5 0 0 0 0-1m5.707 1.5.354-.354a.5.5 0 0 0-.708-.707l-.353.354-.354-.354a.5.5 0 0 0-.707.707l.354.354-.354.354a.5.5 0 0 0 .707.707L8.5 6.12l.353.354a.5.5 0 1 0 .708-.707l-.354-.354v.001Zm-3.639-2.5a.509.509 0 0 1-.51-.5c0-.276.214-.5.49-.5h.02a.5.5 0 0 1 0 1m16 5a.509.509 0 0 1-.51-.5c0-.276.214-.5.49-.5h.02a.5.5 0 1 1 0 1M4 22.364c0-.17.013-.334.025-.5H1.038c.275-1.764 2.014-2.695 3.952-2.933.239-.381.515-.738.825-1.061C2.891 17.926 0 19.32 0 22.364a.5.5 0 0 0 .5.5h3.592c-.06-.16-.09-.33-.092-.5m15-10.5c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2m0 5c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3m-14-5c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2m0 5c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3m13.185 1.006c.31.323.586.68.825 1.062 1.939.237 3.676 1.168 3.95 2.932h-2.985c.013.166.025.33.025.5 0 .176-.036.343-.091.5h3.59c.277 0 .5-.223.5-.5 0-3.044-2.89-4.438-5.814-4.494M6.027 22h11.878c-.25-2.247-2.16-4-4.473-4H10.5a4.507 4.507 0 0 0-4.473 4m12.405 1H5.5a.5.5 0 0 1-.5-.5c0-3.033 2.467-5.5 5.5-5.5h2.932c3.033 0 5.5 2.467 5.5 5.5a.5.5 0 0 1-.5.5m-6.499-13c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2m0 5c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3m4.191-13c-.308 0-.585.118-.725.258a.876.876 0 0 0-.313.645c-.021.345.104.714.31.92.455.562 1.336 1.346 2.082 1.955.475-.388 1.542-1.284 2.045-1.914a1.29 1.29 0 0 0 .349-.96c-.009-.154-.056-.437-.271-.608a.409.409 0 0 1-.044-.039c-.168-.169-.54-.308-.925-.239a.917.917 0 0 0-.701.532c-.164.351-.741.351-.905 0a.915.915 0 0 0-.7-.532A1.076 1.076 0 0 0 16.124 2Zm1.355 4.866a.689.689 0 0 1-.434-.153c-.401-.32-1.753-1.426-2.393-2.224-.371-.368-.601-1.013-.564-1.644.032-.553.262-1.027.647-1.332.388-.394 1.097-.597 1.763-.48.381.066.714.228.98.471a1.94 1.94 0 0 1 .982-.472c.66-.114 1.352.081 1.784.5.373.305.595.771.626 1.314.036.631-.194 1.276-.602 1.684-.607.762-1.956 1.864-2.354 2.182a.697.697 0 0 1-.435.154Z"></path></svg>
+                <svg viewBox="0 0 24 24" className=" cursor-pointer w-7 h-7">
+                  <path d="M3.5 3.914H3v-.5a.5.5 0 0 0-1 0v.5h-.5a.5.5 0 1 0 0 1H2v.5a.5.5 0 1 0 1 0v-.5h.5a.5.5 0 0 0 0-1m5.707 1.5.354-.354a.5.5 0 0 0-.708-.707l-.353.354-.354-.354a.5.5 0 0 0-.707.707l.354.354-.354.354a.5.5 0 0 0 .707.707L8.5 6.12l.353.354a.5.5 0 1 0 .708-.707l-.354-.354v.001Zm-3.639-2.5a.509.509 0 0 1-.51-.5c0-.276.214-.5.49-.5h.02a.5.5 0 0 1 0 1m16 5a.509.509 0 0 1-.51-.5c0-.276.214-.5.49-.5h.02a.5.5 0 1 1 0 1M4 22.364c0-.17.013-.334.025-.5H1.038c.275-1.764 2.014-2.695 3.952-2.933.239-.381.515-.738.825-1.061C2.891 17.926 0 19.32 0 22.364a.5.5 0 0 0 .5.5h3.592c-.06-.16-.09-.33-.092-.5m15-10.5c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2m0 5c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3m-14-5c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2m0 5c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3m13.185 1.006c.31.323.586.68.825 1.062 1.939.237 3.676 1.168 3.95 2.932h-2.985c.013.166.025.33.025.5 0 .176-.036.343-.091.5h3.59c.277 0 .5-.223.5-.5 0-3.044-2.89-4.438-5.814-4.494M6.027 22h11.878c-.25-2.247-2.16-4-4.473-4H10.5a4.507 4.507 0 0 0-4.473 4m12.405 1H5.5a.5.5 0 0 1-.5-.5c0-3.033 2.467-5.5 5.5-5.5h2.932c3.033 0 5.5 2.467 5.5 5.5a.5.5 0 0 1-.5.5m-6.499-13c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2m0 5c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3m4.191-13c-.308 0-.585.118-.725.258a.876.876 0 0 0-.313.645c-.021.345.104.714.31.92.455.562 1.336 1.346 2.082 1.955.475-.388 1.542-1.284 2.045-1.914a1.29 1.29 0 0 0 .349-.96c-.009-.154-.056-.437-.271-.608a.409.409 0 0 1-.044-.039c-.168-.169-.54-.308-.925-.239a.917.917 0 0 0-.701.532c-.164.351-.741.351-.905 0a.915.915 0 0 0-.7-.532A1.076 1.076 0 0 0 16.124 2Zm1.355 4.866a.689.689 0 0 1-.434-.153c-.401-.32-1.753-1.426-2.393-2.224-.371-.368-.601-1.013-.564-1.644.032-.553.262-1.027.647-1.332.388-.394 1.097-.597 1.763-.48.381.066.714.228.98.471a1.94 1.94 0 0 1 .982-.472c.66-.114 1.352.081 1.784.5.373.305.595.771.626 1.314.036.631-.194 1.276-.602 1.684-.607.762-1.956 1.864-2.354 2.182a.697.697 0 0 1-.435.154Z"></path>
+                </svg>
               </div>
 
               <div>
-                <h1 className="text-sm font- normal cursor-pointer ">Community</h1>
+                <h1 className="text-sm font- normal cursor-pointer ">
+                  Community
+                </h1>
               </div>
             </div>
             <div className=" hidden cursor-pointer  sm:flex items-center gap-x-3 border-l border-gray-200  px-4">
               <div>
-              <img src="https://www.sephora.com/img/ufe/icons/me32.svg" role="presentation" alt="" class="w-8 h-8" data-comp="Avatar Image StyledComponent BaseComponent " />
+                <img
+                  src="https://www.sephora.com/img/ufe/icons/me32.svg"
+                  role="presentation"
+                  alt=""
+                  class="w-8 h-8"
+                  data-comp="Avatar Image StyledComponent BaseComponent "
+                />
               </div>
 
               <div>
-                <h1 className=" cursor-pointer text-sm font-semibold">Sign In</h1>
-                <p className=" cursor-pointer text-xs text-gray-600">for FREE Shipping</p>
+                <h1 className=" cursor-pointer text-sm font-semibold">
+                  Sign In
+                </h1>
+                <p className=" cursor-pointer text-xs text-gray-600">
+                  for FREE Shipping
+                </p>
               </div>
             </div>
-        
           </div>
 
           <div className="flex gap-6 items-center">
-          <div className="relative cursor-pointer">
-          <svg  viewBox="0 0 24 24" className="w-6 h-6 text-gray-700">
-              <path d="M22 3.1c2.7 2.2 2.6 7.2.1 9.7-2.2 2.8-7.4 8.1-9.3 9.6-.5.4-1.1.4-1.6 0-1.8-1.5-7-6.8-9.2-9.6-2.6-2.6-2.7-7.6 0-9.7C4.6.5 9.7.7 12 4.2 14.3.8 19.3.5 22 3.1zm-.7.8c-2.4-2.4-7.2-2-8.9 1.5-.1.3-.4.4-.7.2-.1 0-.2-.1-.2-.2-1.6-3.5-6.5-4-8.9-1.5C.4 5.6.5 10 2.7 12.2c2.2 2.7 7.3 8 9.1 9.4.1.1.2.1.3 0 1.8-1.4 6.9-6.7 9.1-9.5 2.3-2.1 2.4-6.5.1-8.2z"></path>
-            </svg>
-            <div className="absolute bottom-3.5 text-white left-4.5 text-xs w-4 h-4 bg-[#D0142F] flex items-center justify-center rounded-full ">0</div>
-          </div>
+            <div className="relative cursor-pointer">
+              <svg viewBox="0 0 24 24" className="w-6 h-6 text-gray-700">
+                <path d="M22 3.1c2.7 2.2 2.6 7.2.1 9.7-2.2 2.8-7.4 8.1-9.3 9.6-.5.4-1.1.4-1.6 0-1.8-1.5-7-6.8-9.2-9.6-2.6-2.6-2.7-7.6 0-9.7C4.6.5 9.7.7 12 4.2 14.3.8 19.3.5 22 3.1zm-.7.8c-2.4-2.4-7.2-2-8.9 1.5-.1.3-.4.4-.7.2-.1 0-.2-.1-.2-.2-1.6-3.5-6.5-4-8.9-1.5C.4 5.6.5 10 2.7 12.2c2.2 2.7 7.3 8 9.1 9.4.1.1.2.1.3 0 1.8-1.4 6.9-6.7 9.1-9.5 2.3-2.1 2.4-6.5.1-8.2z"></path>
+              </svg>
+              <div className="absolute bottom-3.5 text-white left-4.5 text-xs w-4 h-4 bg-[#D0142F] flex items-center justify-center rounded-full ">
+                0
+              </div>
+            </div>
 
-            <svg viewBox="0 0 24 24" className="cursor-pointer w-6 h-6 text-gray-700">
+            <svg
+              viewBox="0 0 24 24"
+              className="cursor-pointer w-6 h-6 text-gray-700"
+            >
               <path d="M23.498 10c.326 0 .566.28.487.57l-3.078 11.32c-.177.652-.816 1.11-1.55 1.11H4.643c-.733 0-1.371-.458-1.55-1.11L.015 10.57c-.079-.29.16-.57.487-.57h22.996zm-3.112 9.999H3.613l.453 1.668a.588.588 0 0 0 .576.414h14.716c.271 0 .509-.17.575-.414L20.386 20zm.815-3H2.797l.544 2h17.317l.543-2zm.816-3H1.981l.544 2h18.948l.544-2zm.839-3.08H1.144L1.71 13h20.579l.567-2.08zm-9.037-9.205l5.612 5.2a.5.5 0 1 1-.68.734l-5.612-5.2a1.674 1.674 0 0 0-2.278 0l-5.612 5.2a.5.5 0 1 1-.68-.734l5.612-5.2a2.674 2.674 0 0 1 3.638 0z"></path>
             </svg>
           </div>
         </div>
       </div>
 
-      <div className="sm:block hidden bg-black h-8"></div>
+
+      <div className="hidden sm:block mx-auto h-10 w-full bg-black flex text-center justify-center items-center gap-8 px-4 sm:px-6 lg:px-8">
+  <div className="mx-auto  px-8  max-w-screen-xl ">
+    <ul className="flex justify-between  ">
+      <li className="text-white ">
+        <a href="" className="inline-block">New</a>
+      </li>
+      <li className="text-white">
+        <a href="" className="inline-block">Brands</a>
+      </li>
+      <li className="text-white">
+        <a href="" className="inline-block">Makeup</a>
+      </li>
+      <li className="text-white">
+        <a href="" className="inline-block">Skincare</a>
+      </li>
+      <li className="text-white">
+        <a href="" className="inline-block">Hair</a>
+      </li>
+      <li className="text-white">
+        <a href="" className="inline-block">Fragrance</a>
+      </li>
+      <li className="text-white">
+        <a href="" className="inline-block">Tools & Brushes</a>
+      </li>
+      <li className="text-white">
+        <a href="" className="inline-block">Bath & Body</a>
+      </li>
+      <li className="text-white">
+        <a href="" className="inline-block">Mini Size</a>
+      </li>
+      <li className="text-white">
+        <a href="" className="inline-block">Beauty Under $20</a>
+      </li>
+      <li className="text-white">
+        <a href="" className="inline-block">Gifts & Gift Cards</a>
+      </li>
+      <li className="text-white">
+        <a href="" className="inline-block">Sale & Offers</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
     </div>
   );
 };
