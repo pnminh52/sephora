@@ -123,11 +123,10 @@ const UserHeader = () => {
         </div>
       </div>
 
-
-      <div className="hidden sm:block mx-auto h-10 w-full bg-black flex text-center justify-center items-center gap-8 px-4 sm:px-6 lg:px-8">
-  <div className="mx-auto  px-8  max-w-screen-xl ">
-    <ul className="flex justify-between  ">
-      <li className="text-white ">
+<div className="bg-black h-10 relative hidden sm:block">
+<div className="bg-black h-10 hidden sm:block mx-auto px-8 max-w-screen-xl">
+    <ul className="flex justify-between items-center h-full">
+      <li className="text-white">
         <a href="" className="inline-block">New</a>
       </li>
       <li className="text-white">
@@ -166,6 +165,8 @@ const UserHeader = () => {
     </ul>
   </div>
 </div>
+
+
 
 
     </div>
