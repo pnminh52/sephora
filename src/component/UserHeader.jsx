@@ -11,7 +11,7 @@ const UserHeader = () => {
         </div>
       </div>
 
-      <div class="mx-auto max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-gray-200">
+      <div class=" max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-gray-200">
         <div class="flex h-14 sm:h-14 lg:h-20   items-center justify-between">
           <div class="md:flex md:items-center md:gap-12">
             <a class="block text-teal-600" href="#">
@@ -123,7 +123,7 @@ const UserHeader = () => {
         </div>
       </div>
 
-      <div className="block mx-auto px-4 max-w-screen-xl sm:hidden py-2 border-b border-gray-200 container flex justify-between items-center">
+      <div className=" bg-white mx-auto px-4 max-w-screen-xl sm:hidden py-2 border-b border-gray-200 container flex justify-between items-center">
         <div>
           <h1 className="text-sm font-semibold">
             Sign In for FREE Shipping 🚚
