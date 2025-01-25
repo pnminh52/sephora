@@ -1,15 +1,18 @@
 import React from "react";
-import UserHeader from "./../component/UserHeader";
 import UserFooter from "./../component/UserFooter";
 import { Outlet } from "react-router-dom";
 import UserNavbar from './../component/UserNavbar';
+import UserHeader2 from "../component/UserHeader2";
+import UserHeader1 from './../component/UserHeader1';
+import UserHeader3 from './../component/UserHeader3';
 const UserLayout = () => {
   return (
     <div>
-      <div className="sticky z-10 top-0">
-      <UserHeader />  
-
+      <UserHeader1 />
+      <div className="sticky top-0 z-10 md:static">
+        <UserHeader2 />
       </div>
+      <UserHeader3 />
         <Outlet />
       <UserNavbar />
       <UserFooter />

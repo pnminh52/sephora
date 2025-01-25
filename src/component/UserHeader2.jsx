@@ -1,15 +1,9 @@
 import React from "react";
 
-const UserHeader = () => {
+const UserHeader2 = () => {
   return (
     <div>
-      <div className="w-full h-13 sm:h-13 lg-h-15 bg-[#C0DCF1] flex items-center justify-center">
-        <div className="cursor-pointer  justify-center text-xs items-center text-center">
-          <strong>Don't miss out!</strong>&nbsp; So many deals, trial sizes,
-          sample sets and more. <strong>Shop Beauty</strong>&nbsp;
-          <strong className="sm:inline block">Offers ▸</strong>
-        </div>
-      </div>
+     
 
       <div class="bg-white max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-gray-200">
         <div class="flex h-14 sm:h-14 lg:h-20   items-center justify-between">
@@ -123,159 +117,9 @@ const UserHeader = () => {
         </div>
       </div>
 
-      <div className=" bg-white mx-auto px-4 max-w-screen-xl sm:hidden py-2 border-b border-gray-200 container flex justify-between items-center">
-        <div>
-          <h1 className="text-sm font-semibold">
-            Sign In for FREE Shipping 🚚
-          </h1>
-          <p className="text-sm">
-            Dont't have an account?{" "}
-            <a className="text-sm text-blue-500 underline" href="">
-              Create an account
-            </a>
-          </p>
-        </div>
-        <div>
-          <button className="hover:bg-gray-500 transition ease-in-out cursor-pointer px-8 py-1.5 text-sm rounded-full font-semibold bg-black text-white">
-            Sign In
-          </button>
-        </div>
-      </div>
-      <div
-        className=" block bg-white sm:hidden py-2 border-b border-gray-200 w-full overflow-x-auto overflow-y-hidden whitespace-nowrap scrollbar-thin"
-        onWheel={(e) => handleShiftScroll(e)}
-        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-      >
-        <div
-          className="transition hover:text-gray-500 ease-in-out cursor-pointer mx-1 text-xs inline-block bg-white shadow-md px-3 py-1.5 rounded-sm"
-          style={{ boxShadow: "0 1px 2px 2px rgba(0, 0, 0, 0.1)" }}
-        >
-          New
-        </div>
-        <div
-          className="transition hover:text-gray-500 ease-in-out cursor-pointer mx-1 text-xs inline-block bg-white shadow-md px-3 py-1.5 rounded-sm"
-          style={{ boxShadow: "0 1px 2px 2px rgba(0, 0, 0, 0.1)" }}
-        >
-          Brands
-        </div>
-        <div
-          className="transition hover:text-gray-500 ease-in-out cursor-pointer mx-1 text-xs inline-block bg-white shadow-md px-3 py-1.5 rounded-sm"
-          style={{ boxShadow: "0 1px 2px 2px rgba(0, 0, 0, 0.1)" }}
-        >
-          Makeup
-        </div>
-        <div
-          className="transition hover:text-gray-500 ease-in-out cursor-pointer mx-1 text-xs inline-block bg-white shadow-md px-3 py-1.5 rounded-sm"
-          style={{ boxShadow: "0 1px 2px 2px rgba(0, 0, 0, 0.1)" }}
-        >
-          Skincare
-        </div>
-        <div
-          className="transition hover:text-gray-500 ease-in-out cursor-pointer mx-1 text-xs inline-block bg-white shadow-md px-3 py-1.5 rounded-sm"
-          style={{ boxShadow: "0 1px 2px 2px rgba(0, 0, 0, 0.1)" }}
-        >
-          Hair
-        </div>
-        <div
-          className="transition hover:text-gray-500 ease-in-out cursor-pointer mx-1 text-xs inline-block bg-white shadow-md px-3 py-1.5 rounded-sm"
-          style={{ boxShadow: "0 1px 2px 2px rgba(0, 0, 0, 0.1)" }}
-        >
-          Fragrance
-        </div>
-        <div
-          className="transition hover:text-gray-500 ease-in-out cursor-pointer mx-1 text-xs inline-block bg-white shadow-md px-3 py-1.5 rounded-sm"
-          style={{ boxShadow: "0 1px 2px 2px rgba(0, 0, 0, 0.1)" }}
-        >
-          Tools & Brushes
-        </div>
-        <div
-          className="transition hover:text-gray-500 ease-in-out cursor-pointer mx-1 text-xs inline-block bg-white shadow-md px-3 py-1.5 rounded-sm"
-          style={{ boxShadow: "0 1px 2px 2px rgba(0, 0, 0, 0.1)" }}
-        >
-          Bath & Body
-        </div>
-        <div
-          className="transition hover:text-gray-500 ease-in-out cursor-pointer mx-1 text-xs inline-block bg-white shadow-md px-3 py-1.5 rounded-sm"
-          style={{ boxShadow: "0 1px 2px 2px rgba(0, 0, 0, 0.1)" }}
-        >
-          Mini Size
-        </div>
-        <div
-          className="transition hover:text-gray-500 ease-in-out cursor-pointer mx-1 text-xs inline-block bg-white shadow-md px-3 py-1.5 rounded-sm"
-          style={{ boxShadow: "0 1px 2px 2px rgba(0, 0, 0, 0.1)" }}
-        >
-          Gifts & Gift Cards
-        </div>
-      </div>
-
-      <div className="bg-black h-10 relative hidden sm:block">
-        <div className="bg-black h-10 hidden sm:block mx-auto px-8 max-w-screen-xl">
-          <ul className="flex justify-between items-center h-full">
-            <li className="text-white">
-              <a href="" className="inline-block">
-                New
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Brands
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Makeup
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Skincare
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Hair
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Fragrance
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Tools & Brushes
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Bath & Body
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Mini Size
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Beauty Under $20
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Gifts & Gift Cards
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Sale & Offers
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+     
     </div>
   );
 };
 
-export default UserHeader;
+export default UserHeader2;
