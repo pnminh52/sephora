@@ -9,7 +9,7 @@ const UserFooter = () => {
         </h1>
       </div>
       <div className="bg-black max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 py-8 border-b border-gray-100 gap-4">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 py-8 border-b border-gray-100 gap-4">
     <div className="flex items-center gap-2">
       <div>
         <img
@@ -25,7 +25,7 @@ const UserFooter = () => {
         <p className="text-white text-xs">Choose Your Store</p>
       </div>
     </div>
-    
+
     <div className="flex items-center gap-2">
       <div>
         <svg width="24" height="24" fill="#fff">
@@ -59,7 +59,7 @@ const UserFooter = () => {
       </div>
     </div>
 
-    <div className="  flex items-center gap-2">
+    <div className="flex items-center gap-2">
       <div>
         <img
           src="https://www.sephora.com/img/ufe/icons/app.svg"
@@ -89,7 +89,7 @@ const UserFooter = () => {
       </div>
     </div>
 
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-2 col-span-2">
       <div>
         <img
           src="https://www.sephora.com/img/ufe/icons/cc-outline-ko.svg"
@@ -109,8 +109,10 @@ const UserFooter = () => {
   </div>
 </div>
 
-      <div className="bg-black max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 py-8 border-b border-gray-100 gap-4">
+
+
+      <div className="bg-black max-w-screen-xl mx-auto px-4  sm:px-6 lg:px-8">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 py-8 border-b border-gray-100 gap-4">
     <div>
       <ul className="space-y-4">
         <li className="text-white font-semibold cursor-pointer text-md">
@@ -250,14 +252,53 @@ const UserFooter = () => {
     </div>
 
     <div>
-      <h1 className="text-white">text</h1>
+      <ul className="space-y-4">
+        <li className="text-white font-semibold cursor-pointer text-md">
+          <a href="">Region & Language</a>
+        </li>
+        <li className="text-white text-sm cursor-pointer flex gap-2 items-center">
+          <img className="h-auto w-6" src="https://www.sephora.com/img/ufe/flags/us.svg" alt="" />
+          <a href="">Customer Service</a>
+        </li>
+        <li className="text-white text-sm cursor-pointer flex items-center gap-2">
+          <img className="h-auto w-6" src="https://www.sephora.com/img/ufe/flags/ca.svg" alt="" />
+          <a href="">Returns & Exchanges</a>
+        </li>
+        <li className="text-white text-sm cursor-pointer flex items-center gap-2">
+          <img className="h-auto w-6" src="https://www.sephora.com/img/ufe/flags/ca.svg" alt="" />
+          <a href="">Delivery and Pickup Options</a>
+        </li>
+       
+      </ul>
     </div>
 
-    <div>
-      <h1 className="text-white">text</h1>
-    </div>
+    <div className="flex col-span-2 flex-col justify-between h-full">
+  <div>
+    <h1
+      className="text-white text-4xl font-normal"
+      style={{ fontFamily: "'Prata', serif" }}
+    >
+      We Belong to
+    </h1>
+    <h1
+      className="text-white text-4xl font-normal font-lora"
+      style={{ fontFamily: "'Prata', serif" }}
+    >
+      Something Beautiful
+    </h1>
+  </div>
+  <div className="space-y-2">
+    <h1 className="font-semibold text-white">Sign up for Sephora Emails</h1>
+<div className="flex justify-between gap-2">
+<input type="text" placeholder="Enter your email address" className="w-60 text-sm h-10 bg-white rounded-sm" />
+<button className="w-30 rounded-full text-white bg-black border-[2px] border-white">Sign Up</button>
+</div>
   </div>
 </div>
+
+  </div>
+</div>
+<div className="h-10"></div>
 
     </div>
   );
