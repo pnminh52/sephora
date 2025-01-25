@@ -9,7 +9,8 @@ const UserFooter = () => {
         </h1>
       </div>
       <div className="bg-black max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 py-8 border-b border-gray-100 gap-4">
+  <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-6 py-8 border-b border-gray-100 gap-4">
+    {/* Find a Store */}
     <div className="flex items-center gap-2">
       <div>
         <img
@@ -26,6 +27,7 @@ const UserFooter = () => {
       </div>
     </div>
 
+    {/* Customer Service */}
     <div className="flex items-center gap-2">
       <div>
         <svg width="24" height="24" fill="#fff">
@@ -59,7 +61,9 @@ const UserFooter = () => {
       </div>
     </div>
 
-    <div className="flex items-center gap-2">
+    {/* Get the App */}
+<div className="hidden sm:block">
+<div className="flex items-center gap-2">
       <div>
         <img
           src="https://www.sephora.com/img/ufe/icons/app.svg"
@@ -73,7 +77,9 @@ const UserFooter = () => {
         <p className="text-white text-xs">Download Now</p>
       </div>
     </div>
+</div>
 
+    {/* Text Alerts */}
     <div className="flex items-center gap-2">
       <div>
         <img
@@ -89,7 +95,8 @@ const UserFooter = () => {
       </div>
     </div>
 
-    <div className="flex items-center gap-2 col-span-2">
+    {/* Credit Card Program */}
+    <div className="flex items-center gap-2 col-span-1 lg:col-span-2">
       <div>
         <img
           src="https://www.sephora.com/img/ufe/icons/cc-outline-ko.svg"
@@ -102,7 +109,9 @@ const UserFooter = () => {
         </p>
         <p className="text-white text-xs">
           Want 25% off your Sephora purchase?{" "}
-          <span className="underline cursor-pointer text-xs">DETAILS</span>
+          <span className="underline cursor-pointer text-xs">
+            DETAILS
+          </span>
         </p>
       </div>
     </div>
@@ -110,196 +119,287 @@ const UserFooter = () => {
 </div>
 
 
+    <div className="hidden sm:block">
+    <div className="bg-black max-w-screen-xl mx-auto px-4  sm:px-6 lg:px-8">
+      <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-6 py-8 border-b border-gray-100 gap-4">
+          <div>
+            <ul className="space-y-4">
+              <li className="text-white font-semibold cursor-pointer text-md">
+                <a href="">About Sephora</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Newsroom</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Careers</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Sephora Values</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Supply Chain Transparency</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Affiliates</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Sephora Events</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Gift Cards</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Sephora Global Sites</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Diversity, Equity & Inclusion</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Sephora Accelerate</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Beauty (Re)Purposed</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Report a Vulnerability</a>
+              </li>
+            </ul>
+          </div>
 
-      <div className="bg-black max-w-screen-xl mx-auto px-4  sm:px-6 lg:px-8">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 py-8 border-b border-gray-100 gap-4">
-    <div>
-      <ul className="space-y-4">
-        <li className="text-white font-semibold cursor-pointer text-md">
-          <a href="">About Sephora</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Newsroom</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Careers</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Sephora Values</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Supply Chain Transparency</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Affiliates</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Sephora Events</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Gift Cards</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Sephora Global Sites</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Diversity, Equity & Inclusion</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Sephora Accelerate</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Beauty (Re)Purposed</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Report a Vulnerability</a>
-        </li>
-      </ul>
+          <div>
+            <ul className="space-y-4">
+              <li className="text-white font-semibold cursor-pointer text-md">
+                <a href="">My Sephora</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Beauty Insider</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Sephora Credit Card</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Community Profile</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Order Status</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Purchase History</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Account Settings</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Beauty Advisor</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Auto-Replenishment</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Beauty Offers</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Buying Guides</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Rewards Bazaar</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Loves</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Book a Reservation</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul className="space-y-4">
+              <li className="text-white font-semibold cursor-pointer text-md">
+                <a href="">Help</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Customer Service</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Returns & Exchanges</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Delivery and Pickup Options</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Shipping</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Billing</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">International Shipments</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Beauty Services FAQ</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Sephora at Kohl's</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Sephora at Hearst</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Store Locations</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Online Ordering</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Flexible Payments</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer">
+                <a href="">Accessibility</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul className="space-y-4">
+              <li className="text-white font-semibold cursor-pointer text-md">
+                <a href="">Region & Language</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer flex gap-2 items-center">
+                <img
+                  className="h-auto w-6"
+                  src="https://www.sephora.com/img/ufe/flags/us.svg"
+                  alt=""
+                />
+                <a href="">Customer Service</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer flex items-center gap-2">
+                <img
+                  className="h-auto w-6"
+                  src="https://www.sephora.com/img/ufe/flags/ca.svg"
+                  alt=""
+                />
+                <a href="">Returns & Exchanges</a>
+              </li>
+              <li className="text-white text-sm cursor-pointer flex items-center gap-2">
+                <img
+                  className="h-auto w-6"
+                  src="https://www.sephora.com/img/ufe/flags/ca.svg"
+                  alt=""
+                />
+                <a href="">Delivery and Pickup Options</a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="flex col-span-2 flex-col justify-between h-full">
+            <div>
+              <h1
+                className="text-white text-4xl font-normal"
+                style={{ fontFamily: "'Prata', serif" }}
+              >
+                We Belong to
+              </h1>
+              <h1
+                className="text-white text-4xl font-normal font-lora"
+                style={{ fontFamily: "'Prata', serif" }}
+              >
+                Something Beautiful
+              </h1>
+            </div>
+            <div className="space-y-2">
+              <h1 className="font-semibold text-white">
+                Sign up for Sephora Emails
+              </h1>
+              <div className="flex  gap-2">
+                <input
+                  type="text"
+                  placeholder="Enter your email address"
+                  className=" text-sm px-4 bg-white rounded-sm"
+                />
+                <button className=" cursor-pointer px-6 py-2 rounded-full text-white bg-black border-[2px] border-white">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-black max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container flex max-w-screen-xl justify-between py-8  ">
+          <div>
+            <h1 className="text-white text-xs">
+              © 2025 Sephora USA, Inc. All rights reserved.
+            </h1>
+            <div>
+              <ul className="text-white flex gap-3 items-center">
+                <li className=" text-xs  hover:underline">
+                  <a href="">Privacy Policy</a>
+                </li>
+                <li className=" text-xs  hover:underline">
+                  <a href="">Terms of Use</a>
+                </li>
+                <li className=" text-xs  hover:underline">
+                  <a href="">Accessibility</a>
+                </li>
+                <li className=" text-xs  hover:underline">
+                  <a href="">Sitemap</a>
+                </li>
+                <li className=" text-xs  hover:underline">
+                  <a href="">Your Privacy Choices</a>
+
+                </li>
+                <li>
+                <img className="w-7 h-7" src="https://www.sephora.com/img/ufe/icons/opt-out.svg" alt="" />
+
+                </li>
+              
+              </ul>
+            </div>
+            <div>
+            <ul className="text-white flex gap-2 text-xs ">
+                <li className="hover:underline">
+                  <a href="">1-877-737-4672</a>
+                </li>
+                <li className="hover:underline">
+                  <a href="">TTY: 1-888-866-9845</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <ul className="flex gap-4">
+              <li>
+                <img className="cursor-pointer w-7 h-7"  src="https://www.sephora.com/img/ufe/icons/instagram-ko.svg" alt="" />
+              </li>
+              <li>
+                <img className="cursor-pointer w-7 h-7"  src="https://www.sephora.com/img/ufe/icons/facebook-ko.svg" alt="" />
+              </li>
+              <li>
+                <img className="cursor-pointer w-7 h-7"  src="https://www.sephora.com/img/ufe/icons/x-ko.svg" alt="" />
+              </li>
+              <li>
+                <img className="cursor-pointer w-7 h-7"  src="https://www.sephora.com/img/ufe/icons/youtube-ko.svg" alt="" />
+              </li>
+              <li>
+                <img className="cursor-pointer w-7 h-7"  src="https://www.sephora.com/img/ufe/icons/pinterest-ko.svg" alt="" />
+              </li>
+              <li>
+                <img className="cursor-pointer w-7 h-7"  src="https://www.sephora.com/img/ufe/icons/snapchat-ko.svg" alt="" />
+              </li>
+              <li>
+                <img  className="cursor-pointer w-7 h-7" src="https://www.sephora.com/img/ufe/icons/tiktok-ko.svg" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div>
-      <ul className="space-y-4">
-        <li className="text-white font-semibold cursor-pointer text-md">
-          <a href="">My Sephora</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Beauty Insider</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Sephora Credit Card</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Community Profile</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Order Status</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Purchase History</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Account Settings</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Beauty Advisor</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Auto-Replenishment</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Beauty Offers</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Buying Guides</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Rewards Bazaar</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Loves</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Book a Reservation</a>
-        </li>
-      </ul>
+    <div className="block sm:hidden">
+      
     </div>
-
-    <div>
-      <ul className="space-y-4">
-        <li className="text-white font-semibold cursor-pointer text-md">
-          <a href="">Help</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Customer Service</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Returns & Exchanges</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Delivery and Pickup Options</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Shipping</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Billing</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">International Shipments</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Beauty Services FAQ</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Sephora at Kohl's</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Sephora at Hearst</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Store Locations</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Online Ordering</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Flexible Payments</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer">
-          <a href="">Accessibility</a>
-        </li>
-      </ul>
-    </div>
-
-    <div>
-      <ul className="space-y-4">
-        <li className="text-white font-semibold cursor-pointer text-md">
-          <a href="">Region & Language</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer flex gap-2 items-center">
-          <img className="h-auto w-6" src="https://www.sephora.com/img/ufe/flags/us.svg" alt="" />
-          <a href="">Customer Service</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer flex items-center gap-2">
-          <img className="h-auto w-6" src="https://www.sephora.com/img/ufe/flags/ca.svg" alt="" />
-          <a href="">Returns & Exchanges</a>
-        </li>
-        <li className="text-white text-sm cursor-pointer flex items-center gap-2">
-          <img className="h-auto w-6" src="https://www.sephora.com/img/ufe/flags/ca.svg" alt="" />
-          <a href="">Delivery and Pickup Options</a>
-        </li>
-       
-      </ul>
-    </div>
-
-    <div className="flex col-span-2 flex-col justify-between h-full">
-  <div>
-    <h1
-      className="text-white text-4xl font-normal"
-      style={{ fontFamily: "'Prata', serif" }}
-    >
-      We Belong to
-    </h1>
-    <h1
-      className="text-white text-4xl font-normal font-lora"
-      style={{ fontFamily: "'Prata', serif" }}
-    >
-      Something Beautiful
-    </h1>
-  </div>
-  <div className="space-y-2">
-    <h1 className="font-semibold text-white">Sign up for Sephora Emails</h1>
-<div className="flex justify-between gap-2">
-<input type="text" placeholder="Enter your email address" className="w-60 text-sm h-10 bg-white rounded-sm" />
-<button className="w-30 rounded-full text-white bg-black border-[2px] border-white">Sign Up</button>
-</div>
-  </div>
-</div>
-
-  </div>
-</div>
-<div className="h-10"></div>
-
+      <div className=" bg-black h-30"></div>
     </div>
   );
 };
