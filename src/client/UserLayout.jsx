@@ -6,10 +6,11 @@ import UserNavbar from './../component/UserNavbar';
 const UserLayout = () => {
   return (
     <div>
-      <UserHeader />
-      <main>
+      <div className="sticky z-10 top-0">
+      <UserHeader />  
+
+      </div>
         <Outlet />
-      </main>
       <UserNavbar />
       <UserFooter />
     </div>

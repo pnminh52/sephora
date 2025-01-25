@@ -11,10 +11,10 @@ const UserHeader = () => {
         </div>
       </div>
 
-      <div class=" max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-gray-200">
+      <div class="bg-white max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-gray-200">
         <div class="flex h-14 sm:h-14 lg:h-20   items-center justify-between">
           <div class="md:flex md:items-center md:gap-12">
-            <a class="block text-teal-600" href="#">
+            <a class="block text-black" href="#">
               <span class="sr-only">Home</span>
               <svg
                 viewBox="0 0 125 17"
@@ -142,7 +142,7 @@ const UserHeader = () => {
         </div>
       </div>
       <div
-        className=" block  sm:hidden py-2 border-b border-gray-200 w-full overflow-x-auto overflow-y-hidden whitespace-nowrap scrollbar-thin"
+        className=" block bg-white sm:hidden py-2 border-b border-gray-200 w-full overflow-x-auto overflow-y-hidden whitespace-nowrap scrollbar-thin"
         onWheel={(e) => handleShiftScroll(e)}
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
