@@ -4,7 +4,23 @@
       "id": "1",
       "name": "Hydrating Face Cream",
       "description": "A nourishing cream for dry skin.",
-      "image": "https://picsum.photos/200/300"
+      "images": [
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/301",
+        "https://picsum.photos/200/302"
+      ],
+      "thumbnail": "https://www.sephora.com/productimages/sku/s2739589-main-zoom.jpg?pb=clean-at-sephora&imwidth=122",
+      "status": "new",
+      "productLine": ["limited edition", "online only"],
+      "rating": 4.5,
+      "ratingCount": 120,
+      "oldPrice": 50,
+      "priceAfterDiscount": 40,
+      "discount": "20%",
+      "tierTrending": 1,
+      "rewardPoints": 20,
+      "voucher": "Get 10% off next purchase",
+      "category": "Skincare"
     }
   ]
 }

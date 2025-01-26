@@ -5,11 +5,11 @@ const UserHeader2 = () => {
     <div>
      
 
-      <div class="bg-white max-w-screen-xl border-b border-gray-300 mx-auto px-4 sm:px-6 lg:px-8 ">
-        <div class="flex h-14 sm:h-14 lg:h-20   items-center justify-between">
-          <div class="md:flex md:items-center md:gap-12">
-            <a class="block text-black" href="#">
-              <span class="sr-only">Home</span>
+      <div className="bg-white max-w-screen-xl border-b border-gray-300 mx-auto px-4 sm:px-6 lg:px-8 ">
+        <div className="flex h-14 sm:h-14 lg:h-20   items-center justify-between">
+          <div className="md:flex md:items-center md:gap-12">
+            <a className="block text-black" href="#">
+              <span className="sr-only">Home</span>
               <svg
                 viewBox="0 0 125 17"
                 width="120"
@@ -81,7 +81,7 @@ const UserHeader2 = () => {
                   src="https://www.sephora.com/img/ufe/icons/me32.svg"
                   role="presentation"
                   alt=""
-                  class="w-8 h-8"
+                  className="w-8 h-8"
                   data-comp="Avatar Image StyledComponent BaseComponent "
                 />
               </div>
