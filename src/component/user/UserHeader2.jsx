@@ -5,7 +5,7 @@ const UserHeader2 = () => {
     <div>
      
 
-      <div className="bg-white max-w-screen-xl border-b border-gray-300 mx-auto px-4 sm:px-6 lg:px-8 ">
+      <div className="bg-white max-w-screen-2xl border-b border-gray-300 mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex h-14 sm:h-14 lg:h-20   items-center justify-between">
           <div className="md:flex md:items-center md:gap-12">
             <a className="block text-black" href="#">

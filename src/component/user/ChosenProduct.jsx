@@ -1,84 +1,119 @@
 import { useState } from "react";
 import RatingStars from "./RatingStar";
+
 const ChosenProduct = ({ products }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const itemsPerSlide = 6;
-    const totalSlides= Math.ceil(products.length / itemsPerSlide);
+    const totalSlides = Math.ceil(products.length / itemsPerSlide);
     const startIndex = currentSlide * itemsPerSlide;
     const visibleProducts = products.slice(startIndex, startIndex + itemsPerSlide);
-    const handleNext=()=>{
-        if(currentSlide < totalSlides - 1){
-            setCurrentSlide(currentSlide + 1);
-        }
-    }
-    const handlePrev=()=>{
-        if(currentSlide > 0){
-            setCurrentSlide(currentSlide - 1);
-        }
-    }
+  
+    const handleNext = () => {
+      if (currentSlide < totalSlides - 1) {
+        setCurrentSlide(currentSlide + 1);
+      }
+    };
+  
+    const handlePrev = () => {
+      if (currentSlide > 0) {
+        setCurrentSlide(currentSlide - 1);
+      }
+    };
+  
     return (
-    <div>
-      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-6 gap-2">
-        {visibleProducts.map((product) => (
-          <div key={product.id} className="bg-white py-1 rounded-sm shadow-lg">
-            <div className="relative">
-              {product.status && (
-                <h1 className="absolute top-0 left-1 bg-black text-white px-2 rounded-sm text-[10px] uppercase font-semibold">
-                  {product.status}
-                </h1>
-              )}
-              <h1
-                className={`absolute left-1 bg-black text-white px-2 rounded-sm text-[10px] uppercase font-semibold ${
-                  product.status ? "top-4.5" : "top-1"
-                }`}
-              >
-                {product.productLine}
-              </h1>
-            </div>
-
-            <div className="flex items-center justify-center">
-              <img
-                src={product.thumbnail}
-                alt={product.name}
-                className="w-auto h-auto object-cover py-2 px-2"
-              />
-            </div>
-            <div className="px-2">
-            <h2 className="font-semibold text-md">{product.name}</h2>
-            <p className="text-sm text-black min-h-[2rem]">
-                {product.content}
-            </p>
-            <div className="">
-                <span className="text-black font-semibold">{`$${product.priceAfterDiscount.toFixed(
-                2
-                )}`}</span>
-            </div>
-            <div className="flex gap-2 text-sm">
-                <RatingStars rating={product.rating} />
-                {product.ratingCount}
-            </div>
-            </div>
+      <div>
+        <div className="py-4">
+          <h1 className="text-xl font-semibold">Chosen for you</h1>
         </div>
-        ))}
-    </div>
-    <div className="flex justify-between mt-4">
-        <button
-          onClick={handlePrev}
-          disabled={currentSlide === 0}
-          className="px-4 py-2 bg-gray-300 text-black rounded-lg shadow disabled:opacity-50"
-        >
-          Prev
-        </button>
-        <button
-          onClick={handleNext}
-          disabled={currentSlide === totalSlides - 1}
-          className="px-4 py-2 bg-gray-300 text-black rounded-lg shadow disabled:opacity-50"
-        >
-          Next
-        </button>
+        
+        {/* Wrapper div with overflow-hidden */}
+        {/* <div className="overflow-hidden   relative "> */}
+          <div
+            className="grid grid-cols-6 sm:grid-cols-6 md:grid-cols-6 lg:grid-cols-6 gap-2 transition-transform duration-500 ease-in-out"
+            // style={{
+            //   transform: `translateX(-${currentSlide * (100 / totalSlides)}%)`,
+            // }}
+          >
+            {visibleProducts.map((product) => (
+              <div key={product.id} className="bg-white border border-gray-300 py-1 rounded-md shadow-lg">
+                <div className="relative">
+                  {product.status && (
+                    <h1 className="absolute top-0 left-1 bg-black text-white px-2 rounded-sm text-[10px] uppercase font-semibold">
+                      {product.status}
+                    </h1>
+                  )}
+                  <h1
+                    className={`absolute left-1 bg-black text-white px-2 rounded-sm text-[10px] uppercase font-semibold ${product.status ? "top-4.5" : "top-1"}`}
+                  >
+                    {product.productLine}
+                  </h1>
+                </div>
+  
+                <div className="flex items-center justify-center">
+                  <img
+                    src={product.thumbnail}
+                    alt={product.name}
+                    className="w-auto h-auto object-cover py-2"
+                  />
+                </div>
+                <div className="px-2">
+                  <h2 className="font-semibold text-md">{product.name}</h2>
+                  <p className="text-sm text-black min-h-[2rem]">{product.content}</p>
+                  <div className="">
+                    <span className="text-black font-semibold">{`$${product.priceAfterDiscount.toFixed(2)}`}</span>
+                  </div>
+                  <div className="flex gap-2 text-sm">
+                    <RatingStars rating={product.rating} />
+                    {product.ratingCount}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        {/* </div> */}
+        
+        {/* Navigation buttons */}
+        <div className="flex justify-center items-center w-full mt-4 space-x-4">
+          <button
+            onClick={handlePrev}
+            disabled={currentSlide === 0}
+            className="absolute top-1/2 left-18 px-3 py-3 bg-black text-white rounded-full opacity-80 disabled:opacity-0 -ml-6"
+          >
+            <svg
+              className="w-[30px] h-[30px]"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.2893 5.70708C13.8988 5.31655 13.2657 5.31655 12.8751 5.70708L7.98768 10.5993C7.20729 11.3805 7.2076 12.6463 7.98837 13.427L12.8787 18.3174C13.2693 18.7079 13.9024 18.7079 14.293 18.3174C14.6835 17.9269 14.6835 17.2937 14.293 16.9032L10.1073 12.7175C9.71678 12.327 9.71678 11.6939 10.1073 11.3033L14.2893 7.12129C14.6799 6.73077 14.6799 6.0976 14.2893 5.70708Z"
+                fill="#fff"
+              ></path>
+            </svg>
+          </button>
+          <button
+            onClick={handleNext}
+            disabled={currentSlide === totalSlides - 1}
+            className="absolute top-1/2 right-17 px-3 py-3 bg-black text-white rounded-full opacity-80 disabled:opacity-0 -mr-6"
+          >
+            <svg
+              className="w-[30px] h-[30px]"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+                fill="#fff"
+              ></path>
+            </svg>
+          </button>
+        </div>
       </div>
-    </div>
     );
-};
-
-export default ChosenProduct;
+  };
+  
+  
+  
+  export default ChosenProduct;
+  

@@ -11,7 +11,7 @@ const UserFooter = () => {
           Website feedback? Let us know ▸
         </h1>
       </div>
-      <div className="bg-black max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="bg-black max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-6 py-8 border-b border-gray-100 gap-4">
           {/* Find a Store */}
           <div className="flex items-center gap-2">
@@ -120,7 +120,7 @@ const UserFooter = () => {
         </div>
       </div>
       <div className="hidden sm:block">
-        <div className="bg-black max-w-screen-xl mx-auto px-4  sm:px-6 lg:px-8">
+        <div className="bg-black max-w-screen-2xl mx-auto px-4  sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-6 py-8 border-b border-gray-100 gap-4">
             <div>
               <ul className="space-y-4">
@@ -328,8 +328,8 @@ const UserFooter = () => {
             </div>
           </div>
         </div>
-        <div className="bg-black max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="container flex max-w-screen-xl justify-between py-8  ">
+        <div className="bg-black max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="container flex max-w-screen-2xl justify-between py-8  ">
             <div>
               <h1 className="text-white text-xs">
                 © 2025 Sephora USA, Inc. All rights reserved.
