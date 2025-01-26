@@ -1,39 +1,62 @@
-import React, { useEffect, useState } from 'react'
-import UserHeader3 from './../component/user/UserHeader3';
-
+import React, { useEffect, useState } from "react";
+import UserHeader3 from "./../component/user/UserHeader3";
+import RatingStars from "./../component/user/RatingStar";
 const Homepage = (props) => {
-  const {products, setProducts} = props;
-
+  const { products, setProducts } = props;
 
   return (
-    <div className='h-800'>
+    <div>
       <UserHeader3 />
-      <div>
-        <h1>Homepage</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {products.map(product => (
-            <div key={product.id} className="bg-white p-4 rounded-lg shadow-md">
-              <img src={product.thumbnail} alt={product.name} className="w-auto h-auto object-cover rounded-md mb-4" />
-              <h2 className="font-semibold text-lg">{product.name}</h2>
-              <p className="text-sm text-gray-600">{product.description}</p>
-              <div className="mt-2">
-                <span className="text-green-600 font-semibold">{`$${product.priceAfterDiscount}`}</span>
-                <span className="line-through text-gray-400 ml-2">{`$${product.oldPrice}`}</span>
+      <div className="h-800 max-w-screen-xl mx-auto px-8">
+        <div>
+          <h1>Homepage content will display here</h1>
+          <div className=" grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-6 gap-2">
+            {products.map((product) => (
+              <div
+                key={product.id}
+                className="bg-white border border-black   rounded-sm shadow-md"
+              >
+                <div className="relative">
+  {product.status && (
+    <h1 className="absolute top-1 left-1 bg-black text-white px-2 py-0.2 rounded-sm text-[10px] uppercase font-semibold">
+      {product.status}
+    </h1>
+  )}
+  <h1 
+    className={`absolute left-1 bg-black text-white px-2 py-0.2 rounded-sm text-[10px] uppercase font-semibold ${product.status ? 'top-5.5' : 'top-1'}`}
+  >
+    {product.productLine}
+  </h1>
+</div>
+
+                 <div>
+                 <img
+                    src={product.thumbnail}
+                    alt={product.name}
+                    className="w-auto h-auto object-cover px-2 py-2 rounded-md"
+                  />
+                 </div>
+
+              <div className="px-2 py-1">
+              <h2 className="font-semibold text-md">{product.name}</h2>
+                <p className="text-sm text-black min-h-[2rem]">{product.content}</p>
+                <div className="py-1">
+                  <span className="text-black font-semibold">{`$${product.priceAfterDiscount.toFixed(
+                    2
+                  )}`}</span>
+                </div>
+                <div className="flex gap-2">
+                  <RatingStars rating={product.rating} />
+                  ({product.ratingCount})
+                </div>
               </div>
-              <div className="mt-2">
-                <span className="text-black">{`⭐ ${product.rating} (${product.ratingCount} )`}</span>
-                <span className="text-red-500 ml-2">-{`${product.discount}`}</span>
               </div>
-              <div className="mt-2">
-                <span className="text-sm">{`Category: ${product.category}`}</span>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-
-export default Homepage
+export default Homepage;
