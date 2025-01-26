@@ -1,11 +1,10 @@
 import React from "react";
-import UserFooter from "./../component/UserFooter";
 import { Outlet } from "react-router-dom";
-import UserNavbar from './../component/UserNavbar';
-import UserHeader2 from "../component/UserHeader2";
-import UserHeader1 from './../component/UserHeader1';
-import UserHeader3 from './../component/UserHeader3';
-import ScrollUp from './../component/ScrollUp';
+import UserNavbar from "../component/user/UserNavbar";
+import UserHeader2 from "../component/user/UserHeader2";
+import UserHeader1 from "./../component/user/UserHeader1";
+import ScrollUp from "./../component/user/ScrollUp";
+import UserFooter from "./../component/user/UserFooter";
 const UserLayout = () => {
   return (
     <div>
@@ -13,10 +12,9 @@ const UserLayout = () => {
       <div className="sticky top-0 z-10 md:static">
         <UserHeader2 />
       </div>
-      <UserHeader3 />
-        <Outlet />
+      <Outlet />
       <UserNavbar />
-      <UserFooter id="footer"/>
+      <UserFooter id="footer" />
       <ScrollUp />
     </div>
   );

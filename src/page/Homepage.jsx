@@ -1,9 +1,10 @@
 import React from 'react'
+import UserHeader3 from './../component/user/UserHeader3';
 
 const Homepage = () => {
   return (
     <div className='h-800'>
-      Trang chủ nằm ở đây 
+      <UserHeader3 /> 
     </div>
   )
 }
