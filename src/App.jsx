@@ -64,7 +64,7 @@ const App = () => {
         <Route path="products/:id/product-update" element={<ProductUpdate products={products} updateProduct={updateProduct} />} />
       </Route>
       <Route path="/" element={<UserLayout />}>
-        <Route index element={<Homepage products={products} />} />
+        <Route index element={<Homepage products={products}/>} />
       </Route>
     </Routes>
   );
