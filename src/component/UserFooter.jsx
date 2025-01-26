@@ -5,7 +5,7 @@ const UserFooter = () => {
   const [isOpen2, setIsOpen2] = useState(false);
   const [isOpen3, setIsOpen3] = useState(false);
   return (
-    <div className="bg-black w-full">
+    <footer className="bg-black w-full " id="footer">
       <div className="h-10 bg-[#CCCCCC] flex items-center justify-center">
         <h1 className="font-semibold hover:underline cursor-pointer text-md">
           Website feedback? Let us know ▸
@@ -819,7 +819,7 @@ const UserFooter = () => {
           <div className="bg-black h-30"></div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

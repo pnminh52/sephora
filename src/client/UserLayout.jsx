@@ -5,6 +5,7 @@ import UserNavbar from './../component/UserNavbar';
 import UserHeader2 from "../component/UserHeader2";
 import UserHeader1 from './../component/UserHeader1';
 import UserHeader3 from './../component/UserHeader3';
+import ScrollUp from './../component/ScrollUp';
 const UserLayout = () => {
   return (
     <div>
@@ -15,7 +16,8 @@ const UserLayout = () => {
       <UserHeader3 />
         <Outlet />
       <UserNavbar />
-      <UserFooter />
+      <UserFooter id="footer"/>
+      <ScrollUp />
     </div>
   );
 };
