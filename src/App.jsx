@@ -6,6 +6,7 @@ import ProductUpdate from './server/product/ProductUpdate';
 import AdminLayout from './server/AdminLayout';
 import UserLayout from './client/UserLayout';
 import Homepage from './page/Homepage';
+import ProductDetails from './page/ProductDetails';
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -65,6 +66,7 @@ const App = () => {
       </Route>
       <Route path="/" element={<UserLayout />}>
         <Route index element={<Homepage products={products}/>} />
+        <Route path="products/:id" element={<ProductDetails products={products}/>} />
       </Route>
     </Routes>
   );
