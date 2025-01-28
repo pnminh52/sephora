@@ -66,7 +66,7 @@ const App = () => {
       </Route>
       <Route path="/" element={<UserLayout />}>
         <Route index element={<Homepage products={products}/>} />
-        <Route path="products/:id" element={<ProductDetails products={products}/>} />
+        <Route path="/products/:id" element={<ProductDetails products={products} />} />
       </Route>
     </Routes>
   );
