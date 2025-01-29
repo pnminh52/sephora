@@ -815,7 +815,7 @@ const UserFooter = () => {
               </div>
             </div>
           </div>
-          <div className="bg-black h-30"></div>
+          <div className="bg-black h-33"></div>
         </div>
       </div>
     </footer>
