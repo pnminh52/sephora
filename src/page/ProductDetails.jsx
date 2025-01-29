@@ -61,9 +61,11 @@ const ProductDetails = ({ products }) => {
             </picture>
           </div>
         </div>
-
+        <div className="py-4 ">
+          <p className="text-md font-semibold hover:underline cursor-pointer">{product.name}</p>
+          <p className="text-md ">{product.content}</p>
+        </div>
         <div>
-          <h2>{product.name}</h2>
           <img src={product.thumbnail} alt="" />
           <p>{product.content}</p>
           <p>Price: ${product.priceAfterDiscount}</p>
