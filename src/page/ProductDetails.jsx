@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 import AddToBasket from './../component/user/AddToBasket';
-
+import UserHeader3 from '../component/user/UserHeader3';
 const ProductDetails = ({products}) => {
   const {id}=useParams()
   const [product, setProduct] = useState(null)
@@ -18,6 +18,9 @@ const ProductDetails = ({products}) => {
   } 
   return (
     <div>
+      <div className='hidden sm:block'>
+      <UserHeader3 />
+      </div>
       <h1>Product Details</h1>
       <div>
         <h2>{product.name}</h2>

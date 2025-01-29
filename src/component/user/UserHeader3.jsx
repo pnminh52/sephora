@@ -3,7 +3,7 @@ import React from 'react'
 const UserHeader3 = () => {
   return (
     <div>
-       <div className=" bg-white mx-auto px-4 max-w-screen-xl sm:hidden py-2 border-b border-gray-200 container flex justify-between items-center">
+       <div className=" bg-white border-t mx-auto px-4 max-w-screen-xl sm:hidden py-2 border-b border-gray-200 container flex justify-between items-center">
         <div>
           <h1 className="text-sm font-semibold">
             Sign In for FREE Shipping 🚚

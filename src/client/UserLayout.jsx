@@ -13,7 +13,7 @@ const UserLayout = () => {
       <div className="sticky top-0 z-10 md:static">
         <UserHeader2 />
       </div>
-      <UserHeader3 />
+      
       <Outlet />
       <UserNavbar />
       <UserFooter id="footer" />
