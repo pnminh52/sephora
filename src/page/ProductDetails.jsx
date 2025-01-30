@@ -32,8 +32,8 @@ const ProductDetails = ({ products }) => {
           </p>
         </div>
         <div className="flex w-full justify-between bg-[#A76640] ">
-          <div className="text-white flex items-center ml-4 mr-4  w-1/2  ">
-            <div>
+          <div className="text-white flex items-center w-1/2  ">
+            <div className=" pl-4">
               <p className="text-xs cursor-pointer font-semibold">
                 Try Complexion Picks at Home
               </p>
@@ -61,12 +61,23 @@ const ProductDetails = ({ products }) => {
             </picture>
           </div>
         </div>
-        <div className="py-4 ">
-          <p className="text-md font-semibold hover:underline cursor-pointer">{product.name}</p>
-          <p className="text-md ">{product.content}</p>
+        <div className="flex justify-between py-4">
+        <div className="w-1/2">
+        <img src={product.thumbnail} alt="" />
+
         </div>
+        <div className=" w-1/2">
+        <p className="text-sm font-semibold hover:underline cursor-pointer">{product.name}</p>
+          <p className="text-md ">{product.content}</p>
+          <div className="h-10 w-full mt-4 mb-4 bg-[#F6F6F8]">
+
+</div>
+        </div>
+        </div>
+        
+      
+        
         <div>
-          <img src={product.thumbnail} alt="" />
           <p>{product.content}</p>
           <p>Price: ${product.priceAfterDiscount}</p>
           <p>
