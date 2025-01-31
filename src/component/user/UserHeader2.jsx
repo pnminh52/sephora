@@ -1,16 +1,13 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 const UserHeader2 = () => {
-   const [isHovered0, setIsHovered0] = useState(true);
   return (
     <div>
-     
-
       <div className="bg-white max-w-screen-xl border-b sm:border-b-0 border-gray-300  mx-auto px-4 sm:px-6 lg:px-8 ">
-        <div className="flex h-14 sm:h-14 lg:h-20   items-center justify-between">
+        <div className="flex h-14 sm:h-14 lg:h-22   items-center justify-between">
           <div className="md:flex md:items-center md:gap-12">
             <Link to={`/`}>
-            <svg
+              <svg
                 viewBox="0 0 125 17"
                 width="120"
                 height="17"
@@ -41,55 +38,77 @@ const UserHeader2 = () => {
           </div>
 
           <div className="flex gap-4 items-center">
-            <div className="hidden sm:flex items-center gap-x-3">
-            <div
-  className="relative hidden sm:flex items-center gap-x-3"
-  onMouseEnter={() => setIsHovered0(true)}
-  onMouseLeave={() => setIsHovered0(false)}
->
-  <div>
-    <svg viewBox="0 0 24 24" className="cursor-pointer w-7 h-7">
-      <g>
-        <path d="M1.5 24a.5.5 0 01-.5-.5v-20a.5.5 0 01.5-.5h21a.5.5 0 01.5.5v20a.5.5 0 01-.5.5h-21zM22 23V4H2v19h20z"></path>
-        <path d="M0 23h24v1H0z"></path>
-        <path d="M7.5 24a.5.5 0 01-.5-.5v-10a.5.5 0 01.5-.5h9a.5.5 0 01.5.5v10a.5.5 0 01-.5.5h-9zm8.5-1v-9H8v9h8z"></path>
-        <path d="M11.5 13h1v11h-1zM1 6V5h22v1zm0 2V7h22v1zm0 2V9h22v1z"></path>
-      </g>
-    </svg>
-  </div>
+           
+            <div className="relative">
+  <div className="hidden sm:flex items-center gap-x-3">
+    <div className="relative sm:flex items-center gap-x-3 group">
+      <div>
+        <svg viewBox="0 0 24 24" className="cursor-pointer w-7 h-7">
+          <g>
+            <path d="M1.5 24a.5.5 0 01-.5-.5v-20a.5.5 0 01.5-.5h21a.5.5 0 01.5.5v20a.5.5 0 01-.5.5h-21zM22 23V4H2v19h20z"></path>
+            <path d="M0 23h24v1H0z"></path>
+            <path d="M7.5 24a.5.5 0 01-.5-.5v-10a.5.5 0 01.5-.5h9a.5.5 0 01.5.5v10a.5.5 0 01-.5.5h-9zm8.5-1v-9H8v9h8z"></path>
+            <path d="M11.5 13h1v11h-1zM1 6V5h22v1zm0 2V7h22v1zm0 2V9h22v1z"></path>
+          </g>
+        </svg>
+      </div>
 
-  <div>
-    <h1 className="cursor-pointer text-sm font-semibold">Stores & Services</h1>
-    <p className="cursor-pointer text-xs text-gray-600">Choose Your Store</p>
-  </div>
-  {isHovered0 && (
-  <div className="absolute z-50 left-1/2 -translate-x-1/2 top-full mt-2 bg-white rounded-lg border border-red-800 w-90 shadow-md">
-    <div className="flex py-6 items-center justify-center">
-      <button className="cursor-pointer px-4 py-2 text-white bg-black text-center rounded-full text-xs font-semibold">
-        Choose Your Store
-      </button>
+      <div className="border-b-2 py-2 transition ease-in-out duration-300  hover:border-black border-white">
+        <h1 className="cursor-pointer text-sm">Stores & Services</h1>
+        <p className="cursor-pointer text-xs text-gray-600">Choose Your Store</p>
+      </div>
+
+      <div className="group-hover:block hidden absolute z-50 left-1/2 -translate-x-1/2 top-full mt-2 bg-white rounded-lg w-90 shadow-[0px_0px_3px_3px_rgba(0,0,0,0.1)]">
+        <div className="flex py-6 items-center justify-center">
+          <button className="cursor-pointer px-4 py-2 text-white bg-black text-center rounded-full text-xs font-semibold">
+            Choose Your Store
+          </button>
+        </div>
+        <div className="h-2.5 bg-gray-100"></div>
+        <div className="flex px-4 gap-1 py-3 items-center cursor-pointer">
+          <svg viewBox="0 0 24 24" aria-hidden="true" className="w-6 h-6">
+            <g fill="none" fillRule="evenodd">
+              <path d="M0 0h24v24H0z"></path>
+              <g transform="translate(6 4)" stroke="currentColor">
+                <path d="M6 0C2.683 0 0 2.504 0 5.6 0 9.8 6 16 6 16s6-6.2 6-10.4C12 2.504 9.317 0 6 0h0z"></path>
+                <circle strokeWidth=".8" cx="6" cy="6" r="2.222"></circle>
+              </g>
+            </g>
+          </svg>
+          <p className="font-semibold text-sm">Find a Sephora</p>
+        </div>
+        <div className="h-2.5 bg-gray-100"></div>
+        <div className="flex gap-4 p-4 border-b border-gray-200">
+          <img className="cursor-pointer" src="https://www.sephora.com/contentimages/happening/flyoutmenu_makeup.svg" alt="" />
+          <div>
+            <h1 className="text-sm cursor-pointer">Makeup Services</h1>
+            <p className="text-xs text-gray-600 cursor-pointer">One-on-one makeup application or beauty lesson</p>
+          </div>
+        </div>
+        <div className="flex gap-4 p-4 border-b border-gray-200">
+          <img className="cursor-pointer" src="https://www.sephora.com/contentimages/happening/flyoutmenu_waxing.svg" alt="" />
+          <div>
+            <h1 className="text-sm cursor-pointer">Waxing Services</h1>
+            <p className="text-xs text-gray-600 cursor-pointer">Expert grooming for brows, upper lip, or chin</p>
+          </div>
+        </div>
+        <div className="flex gap-4 p-4">
+          <img className="cursor-pointer" src="https://www.sephora.com/contentimages/happening/flyoutmenu_events.svg" alt="" />
+          <div>
+            <h1 className="text-sm cursor-pointer">Events</h1>
+            <p className="text-xs text-gray-600 cursor-pointer">Learn about brands, try new products, and more at our in-store events</p>
+          </div>
+        </div>
+        <div className="h-2.5 bg-gray-100"></div>
+        <div className="py-3 flex gap-3 p-4 items-center">
+          <a className="text-blue-600 hover:underline cursor-pointer" href="">My Reservations</a> | 
+          <a className="text-blue-600 hover:underline cursor-pointer" href="">Beauty Service FAQs</a>
+        </div>
+      </div>
     </div>
-    <div className="h-2.5 bg-gray-100"></div>
-    <div className="flex px-4 gap-1 py-3 items-center">
-    <svg viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><g transform="translate(6 4)" stroke="currentColor"><path d="M6 0C2.683 0 0 2.504 0 5.6 0 9.8 6 16 6 16s6-6.2 6-10.4C12 2.504 9.317 0 6 0h0z"></path><circle stroke-width=".8" cx="6" cy="6" r="2.222"></circle></g></g></svg>
-     <p className="font-semibold text-sm"> Find a Sephora</p> </div>
-    <div className="h-2.5 bg-gray-100"></div>
-<div className="flex gap-4 p-4">
-  <img src="https://www.sephora.com/contentimages/happening/flyoutmenu_makeup.svg" alt="" />
-  <div>
-  <h1 className="text-sm">Makeup Services</h1>
-  <p className="text-xs text-gray-600">One-on-one makeup application or beauty lesson</p>
   </div>
 </div>
-  </div>
-)}
 
-
-</div>
-
-             
-
-            </div>
             <div className="hidden sm:flex items-center gap-x-3 px-4">
               <div>
                 <svg viewBox="0 0 24 24" className=" cursor-pointer w-7 h-7">
@@ -144,9 +163,6 @@ const UserHeader2 = () => {
           </div>
         </div>
       </div>
-
-
-     
     </div>
   );
 };
