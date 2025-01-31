@@ -13,7 +13,6 @@ const UserHeader4 = () => {
   const [isHovered9, setIsHovered9] = useState(false);
   const [isHovered10, setIsHovered10] = useState(false);
   const [isHovered11, setIsHovered11] = useState(false);
-
   return (
     <div className="hidden sm:block">
       <div className="bg-black h-12 relative">
@@ -216,7 +215,6 @@ const UserHeader4 = () => {
           </ul>
         </div>
       </div>
-
       {isHovered0 && (
         <div>
           <div
@@ -1220,37 +1218,6 @@ const UserHeader4 = () => {
                       <li className="font-semibold text-black hover:underline cursor-pointer">
                         New
                       </li>
-                      <li className="text-black hover:underline cursor-pointer">
-                        Bestsellers
-                      </li>
-                      <li className="text-black hover:underline cursor-pointer">
-                        Clean Fragrance
-                      </li>
-                      <li className="text-black hover:underline cursor-pointer">
-                        Vegan Fragrance
-                      </li>
-                      <li className="text-black hover:underline cursor-pointer">
-                        Mini Size
-                      </li>
-                      <li className="text-black hover:underline cursor-pointer">
-                        Value Size
-                      </li>
-                      <li className="font-semibold text-black hover:underline cursor-pointer">
-                        Refillable Fragrance
-                      </li>
-                      <li className="font-semibold text-black hover:underline cursor-pointer">
-                        Luxury Fragrance
-                      </li>
-                      <li className="font-semibold text-black hover:underline cursor-pointer">
-                        Black-Owned Brands Fragrance
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="  text-black text-sm">
-                    <ul className="space-y-3">
-                      <li className="font-semibold text-black hover:underline cursor-pointer">
-                        New
-                      </li>
                       <li className="font-semibold text-black hover:underline cursor-pointer">
                         Bestsellers
                       </li>
@@ -1301,6 +1268,668 @@ const UserHeader4 = () => {
                         Next Big Thing
                       </li>
                     </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-0"></div>
+        </div>
+      )}
+      {isHovered6 && (
+        <div>
+          <div
+            className=" absolute z-10 left-0 w-full bg-white shadow-lg  p-3 flex justify-center"
+            onMouseEnter={() => setIsHovered6(true)}
+            onMouseLeave={() => setIsHovered6(false)}
+          >
+            <div className="max-w-screen-xl w-full flex justify-between px-8 py-4">
+              <div className="w-full gap-4">
+                <div className="flex justify-between">
+                  <div className="grid grid-cols-4">
+                    <div className=" text-black text-sm">
+                      <ul className="space-y-3">
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          All Tools & Brushes
+                        </li>
+                        <li className="font-semibold  text-black hover:underline cursor-pointer">
+                          Sephora Collection
+                        </li>
+                        <li className="font-semibold py-3 text-black hover:underline cursor-pointer">
+                          Brushes & Applicators
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Brush Sets
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Face Brushes
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Eye Brushes
+                        </li>
+                        <li className="text-black  font-semibold hover:underline cursor-pointer">
+                          Lip Brushes
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Sponges & Applicators
+                        </li>
+                        <li className="text-black  font-semibold hover:underline cursor-pointer">
+                          Brush Cleaners
+                        </li>
+                        <li className="text-black  font-semibold hover:underline cursor-pointer">
+                          Facial Cleansing Brushes
+                        </li>{" "}
+                        <li className="text-black py-3 font-semibold hover:underline cursor-pointer">
+                          Hair Styling Tools
+                        </li>{" "}
+                        <li className="text-black  hover:underline cursor-pointer">
+                          Hair Dryers
+                        </li>{" "}
+                        <li className="text-black   hover:underline cursor-pointer">
+                          Straighteners & Flat Irons
+                        </li>{" "}
+                        <li className="text-black   hover:underline cursor-pointer">
+                          Blow Dry Brushes
+                        </li>{" "}
+                        <li className="text-black   hover:underline cursor-pointer">
+                          Curling Irons
+                        </li>{" "}
+                        <li className="text-black   hover:underline cursor-pointer">
+                          Hair Tool Attachments & Diffusers
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="  text-black text-sm">
+                      <ul className="space-y-3">
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Brushes & Combs
+                        </li>
+                        <li className="text-black font-semibold py-3 hover:underline cursor-pointer">
+                          Accessories
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Hair Clips & Claw Clips
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Scrunchies & Hair Ties
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Hair Towels
+                        </li>{" "}
+                        <li className="text-black hover:underline cursor-pointer">
+                          Headbands
+                        </li>{" "}
+                        <li className="text-black hover:underline cursor-pointer">
+                          Silk Pillowcases
+                        </li>{" "}
+                        <li className="text-black hover:underline cursor-pointer">
+                          Scalp Massagers & Rollers
+                        </li>{" "}
+                        <li className="text-black hover:underline cursor-pointer">
+                          Showerheads & Filters
+                        </li>
+                        <li className="text-black font-semibold py-3 hover:underline cursor-pointer">
+                          Wellness
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Wellness Tools & Devices
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Vibrators
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="  text-black text-sm">
+                      <ul className="space-y-3">
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Beauty Tools
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Anti-Aging
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Hair Removal
+                        </li>
+                        <li className="text-black  hover:underline cursor-pointer">
+                          Tweezers & Eyebrows
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Manicure & Pedicure
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Eyelash Curlers
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Sharpeners
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="  text-black text-sm">
+                      <ul className="space-y-3">
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Makeup & Travel Cases
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Value & Gift Sets
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          New
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Bestsellers
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Black-Owned Brands Tools & Brushes
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className=" col-span-2 text-black text-sm">
+                    <img
+                      className="cursor-pointer"
+                      src="https://www.sephora.com/contentimages/meganav/large/2023-8-7-sc-sku-site-desktop-global-navigation-button-en-us.jpg?imwidth=294"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-0"></div>
+        </div>
+      )}
+      {isHovered7 && (
+        <div>
+          <div
+            className=" absolute z-10 left-0 w-full bg-white shadow-lg  p-3 flex justify-center"
+            onMouseEnter={() => setIsHovered7(true)}
+            onMouseLeave={() => setIsHovered7(false)}
+          >
+            <div className="max-w-screen-xl w-full flex justify-between px-8 py-4">
+              <div className="w-full gap-4">
+                <div className="flex justify-between">
+                  <div className="grid grid-cols-5">
+                    <div className=" text-black text-sm">
+                      <ul className="space-y-3">
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          All Bath & Body
+                        </li>
+                        <li className="font-semibold  text-black hover:underline cursor-pointer">
+                          Bath & Shower
+                        </li>
+                        <li className="font-semibold py-3 text-black hover:underline cursor-pointer">
+                          Body Wash & Shower Gel
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Scrubs & Exfoliants
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Bath Soaks & Bubble Bath
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Hand Sanitizer & Hand Soap
+                        </li>
+                        <li className="text-black py-3 font-semibold hover:underline cursor-pointer">
+                          Body Moisturizers
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Body Lotions & Body Oils
+                        </li>
+                        <li className="text-black   hover:underline cursor-pointer">
+                          Hand Cream & Foot Cream
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="  text-black text-sm">
+                      <ul className="space-y-3">
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Antiperspirant
+                        </li>
+                        <li className="text-black font-semibold py-3 hover:underline cursor-pointer">
+                          Body Mist & Hair Mist
+                        </li>
+                        <li className="text-black font-semibold hover:underline cursor-pointer">
+                          Sunscreen
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Scrunchies & Hair Ties
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Sunscreen
+                        </li>{" "}
+                        <li className="text-black hover:underline cursor-pointer">
+                          Face Sunscreen
+                        </li>{" "}
+                        <li className="text-black hover:underline cursor-pointer">
+                          Body Sunscreen
+                        </li>{" "}
+                        <li className="text-black font-semibold py-3 hover:underline cursor-pointer">
+                          Self Tanners
+                        </li>{" "}
+                        <li className="text-black font-semibold hover:underline cursor-pointer">
+                          Wellness
+                        </li>
+                        <li className="text-black font-semibold py-3 hover:underline cursor-pointer">
+                          Supplements
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Intimate Care & Vibrators
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Feminine Care
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="  text-black text-sm">
+                      <ul className="space-y-3">
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Candles & Home Scents
+                        </li>
+                        <li className="text-black font-semibold py-3 hover:underline cursor-pointer">
+                          Shop By Concern
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Stretch Marks & Firming
+                        </li>
+                        <li className="text-black  hover:underline cursor-pointer">
+                          Dryness / Dry Skin
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Smooth Texture
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Even Skin Tone & Color Correction
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="  text-black text-sm">
+                      <ul className="space-y-3">
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          New
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Bestsellers
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Mini Size
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Value Size
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Value & Gift Sets
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Sephora Collection
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Black-Owned Brands Bath & Body
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="  text-black text-sm">
+                      <ul className="space-y-3">
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Help Me Choose
+                        </li>
+                        <li className=" text-black hover:underline cursor-pointer">
+                          The Joy of Body Care
+                        </li>
+                        <li className=" text-black hover:underline cursor-pointer">
+                          The Best Skincare
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className=" col-span-2 text-black text-sm">
+                    <img
+                      className="cursor-pointer"
+                      src="https://www.sephora.com/contentimages/2024-12-26-sol-de-janeiro-site-desktop-global-navigation-button-en-us-can.jpg?imwidth=294"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-0"></div>
+        </div>
+      )}
+      {isHovered8 && (
+        <div>
+          <div
+            className=" absolute z-10 left-0 w-full bg-white shadow-lg  p-3 flex justify-center"
+            onMouseEnter={() => setIsHovered8(true)}
+            onMouseLeave={() => setIsHovered8(false)}
+          >
+            <div className="max-w-screen-xl w-full flex justify-between px-8 py-4">
+              <div className="w-full gap-4">
+                <div className="flex justify-between">
+                  <div className="grid grid-cols-3 gap-6">
+                    <div className=" text-black text-sm">
+                      <ul className="space-y-3">
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          All Mini Size
+                        </li>
+                        <li className="font-semibold  text-black hover:underline cursor-pointer">
+                          Makeup
+                        </li>
+                        <li className="font-semibold  text-black hover:underline cursor-pointer">
+                          Skincare
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Hair
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Fragrance
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Bath & Body
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="  text-black text-sm">
+                      <ul className="space-y-3">
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Value & Gift Sets
+                        </li>
+                        <li className="text-black font-semibold hover:underline cursor-pointer">
+                          $15 and Under
+                        </li>
+                        <li className="text-black font-semibold hover:underline cursor-pointer">
+                          $25 and Under
+                        </li>
+                        <li className="text-black font-semibold hover:underline cursor-pointer">
+                          $35 and Under
+                        </li>
+                        <li className="text-black font-semibold hover:underline cursor-pointer">
+                          Sephora Favorites
+                        </li>{" "}
+                        <li className="text-black font-semibold hover:underline cursor-pointer">
+                          Luxe Minis
+                        </li>{" "}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className=" col-span-2 text-black text-sm flex gap-4">
+                    <img
+                      className="cursor-pointer"
+                      src="https://www.sephora.com/contentimages/2024-12-26-dior-miss-dior-mini-miss-solid-perfume-site-desktop-global-navigation-button-en-us-can-2053.jpg?imwidth=294"
+                      alt=""
+                    />
+                    <img
+                      className="cursor-pointer"
+                      src="https://www.sephora.com/contentimages/meganav/large/UPDATED-2024-site-dt-botnav-sfk-US.jpg?imwidth=294"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-0"></div>
+        </div>
+      )}
+      {isHovered9 && (
+        <div>
+          <div
+            className=" absolute z-10 left-0 w-full bg-white shadow-lg  p-3 flex justify-center"
+            onMouseEnter={() => setIsHovered9(true)}
+            onMouseLeave={() => setIsHovered9(false)}
+          >
+            <div className="max-w-screen-xl w-full flex justify-between px-8 py-4">
+              <div className="w-full gap-4">
+                <div className="flex justify-between">
+                  <div className="grid grid-cols-3 gap-6">
+                    <div className=" text-black text-sm">
+                      <ul className="space-y-3">
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Makeup Under $20
+                        </li>
+                        <li className="font-semibold  text-black hover:underline cursor-pointer">
+                          Skincare Under $20
+                        </li>
+                        <li className="font-semibold  text-black hover:underline cursor-pointer">
+                          Fragrance Under $20
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Tools & Brushes Under $20
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Bath & Body Under $20
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="  text-black text-sm">
+                      <ul className="space-y-3">
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Sephora Collection Under $20
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Makeup
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Skincare
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Hair Care
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Tools & Brushes
+                        </li>{" "}
+                        <li className="text-black hover:underline cursor-pointer">
+                          Bath & Body
+                        </li>{" "}
+                        <li className="text-black hover:underline cursor-pointer">
+                          Value & Gift Sets
+                        </li>{" "}
+                        <li className="text-black hover:underline cursor-pointer">
+                          Clean Beauty
+                        </li>{" "}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className=" col-span-2 text-black text-sm ">
+                    <img
+                      className="cursor-pointer"
+                      src="https://www.sephora.com/contentimages/2025-1-13-sc-25-jan-mascara-owned-site-desktop-global-navigation-button-en-us.jpg?imwidth=294"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-0"></div>
+        </div>
+      )}
+      {isHovered10 && (
+        <div>
+          <div
+            className=" absolute z-10 left-0 w-full bg-white shadow-lg  p-3 flex justify-center"
+            onMouseEnter={() => setIsHovered10(true)}
+            onMouseLeave={() => setIsHovered10(false)}
+          >
+            <div className="max-w-screen-xl w-full flex justify-between px-8 py-4">
+              <div className="w-full gap-4">
+                <div className="flex justify-between">
+                  <div className="grid grid-cols-5 gap-4">
+                    <div className=" text-black text-sm">
+                      <ul className="space-y-3">
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          All Gifts
+                        </li>
+                        <li className="font-semibold  text-black hover:underline cursor-pointer">
+                          Gift Card
+                        </li>
+                        <li className="font-semibold  text-black hover:underline cursor-pointer">
+                          Value & Gift Sets
+                        </li>
+                        <li className="text-black py-3 font-semibold hover:underline cursor-pointer">
+                          By Price
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          $10 and under
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          $15 and under
+                        </li>
+                        <li className="text-black  hover:underline cursor-pointer">
+                          $25 and under
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          $50 and under
+                        </li>
+                        <li className="text-black   hover:underline cursor-pointer">
+                          $75 and under
+                        </li>
+                        <li className="text-black   hover:underline cursor-pointer">
+                          $100 and under
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="  text-black text-sm">
+                      <ul className="space-y-3">
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          By Category
+                        </li>
+                        <li className="text-black  hover:underline cursor-pointer">
+                          Makeup
+                        </li>
+                        <li className="text-black  hover:underline cursor-pointer">
+                          Skincare
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Hair
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          Fragrance
+                        </li>{" "}
+                        <li className="text-black hover:underline cursor-pointer">
+                          Candles & Home Scents
+                        </li>{" "}
+                        <li className="text-black hover:underline cursor-pointer">
+                          Tools
+                        </li>{" "}
+                        <li className="text-black font-semibold py-3 hover:underline cursor-pointer">
+                          Brush Sets & Accessories
+                        </li>{" "}
+                        <li className="text-black font-semibold hover:underline cursor-pointer">
+                          Bath & Body
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="  text-black text-sm">
+                      <ul className="space-y-3">
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          By Recipient
+                        </li>
+                        <li className="text-black  hover:underline cursor-pointer">
+                          For Her
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          For Mom
+                        </li>
+                        <li className="text-black  hover:underline cursor-pointer">
+                          For Him
+                        </li>
+                        <li className="text-black hover:underline cursor-pointer">
+                          For Them
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="  text-black text-sm">
+                      <ul className="space-y-3">
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Top Rated Gifts
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Mini Size
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Only at Sephora
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Luxury Gifts
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          The Luxury Guide
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className=" col-span-2 text-black text-sm">
+                    <img
+                      className="cursor-pointer"
+                      src="https://www.sephora.com/contentimages/2025-fragrance-q1-mbc-bundle-c-site-desktop-universal-navigation-button-egc.jpg?imwidth=294"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-0"></div>
+        </div>
+      )}
+      {isHovered11 && (
+        <div>
+          <div
+            className=" absolute z-10 left-0 w-full bg-white shadow-lg  p-3 flex justify-center"
+            onMouseEnter={() => setIsHovered11(true)}
+            onMouseLeave={() => setIsHovered11(false)}
+          >
+            <div className="max-w-screen-xl w-full flex justify-between px-8 py-4">
+              <div className="w-full gap-4">
+                <div className="flex justify-between">
+                  <div className="grid grid-cols-3 gap-6">
+                    <div className=" text-black text-sm">
+                      <ul className="space-y-3">
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          All Sale
+                        </li>
+                        <li className="font-semibold  text-black hover:underline cursor-pointer">
+                          Makeup
+                        </li>
+                        <li className="font-semibold  text-black hover:underline cursor-pointer">
+                          Skincare
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Hair Care
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Fragrance
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Tools & Brushes
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Bath & Body
+                        </li>
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                          Mini Size
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="  text-black text-sm">
+                      <ul className="space-y-3">
+                        <li className="font-semibold text-black hover:underline cursor-pointer">
+                        Beauty Offers
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className=" col-span-2 text-black text-sm flex gap-4">
+                    <img
+                      className="cursor-pointer"
+                      src="https://www.sephora.com/contentimages/meganav/large/slotting-sale-generic-site-desktop-global-navigation-button_copy-only.jpg?imwidth=294"
+                      alt=""
+                    />
+                    <img
+                      className="cursor-pointer"
+                      src="https://www.sephora.com/contentimages/meganav/large/site-desktop-global-navigation-button-evergreen-beauty-offers-abundance.jpg?imwidth=294"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
