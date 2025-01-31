@@ -9,7 +9,7 @@ const ChosenProduct = ({ products }) => {
 
   return (
     <div>
-      <h1>Chosen for you</h1>
+      {/* <h1>Chosen for you</h1>
       <div>
         {products.map((product) => (
           <div key={product.id} onClick={() => handleProductClick(product.id)}>
@@ -19,7 +19,7 @@ const ChosenProduct = ({ products }) => {
             <p>{product.priceAfterDiscount}</p>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

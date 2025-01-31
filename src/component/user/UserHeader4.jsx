@@ -16,10 +16,10 @@ const UserHeader4 = () => {
   return (
     <div className="hidden sm:block">
       <div className="bg-black h-12 relative">
-        <div className="bg-black h-12 mx-auto px-8 max-w-screen-xl flex items-center">
-          <ul className="flex justify-between items-center h-full w-full">
+        <div className="   h-12 mx-auto px-8 max-w-screen-xl flex items-center">
+          <ul className="flex text-white text-sm justify-between items-center gap-4 w-full h-full ">
             <li
-              className="relative text-white  h-full flex items-center"
+              className="relative   h-full flex items-center"
               onMouseEnter={() => setIsHovered0(true)}
               onMouseLeave={() => setIsHovered0(false)}
             >
@@ -37,7 +37,7 @@ const UserHeader4 = () => {
               </div>
             </li>
             <li
-              className="relative text-white h-full flex items-center"
+              className="relative   h-full flex items-center"
               onMouseEnter={() => setIsHovered1(true)}
               onMouseLeave={() => setIsHovered1(false)}
             >
@@ -53,7 +53,7 @@ const UserHeader4 = () => {
               </div>
             </li>
             <li
-              className="relative text-white h-full flex items-center"
+              className="relative  h-full flex items-center"
               onMouseEnter={() => setIsHovered2(true)}
               onMouseLeave={() => setIsHovered2(false)}
             >
@@ -69,7 +69,7 @@ const UserHeader4 = () => {
               </div>
             </li>
             <li
-              className="relative text-white h-full flex items-center"
+              className="relative h-full flex items-center"
               onMouseEnter={() => setIsHovered3(true)}
               onMouseLeave={() => setIsHovered3(false)}
             >
@@ -85,7 +85,7 @@ const UserHeader4 = () => {
               </div>
             </li>
             <li
-              className="relative text-white h-full flex items-center"
+              className="relative  h-full flex items-center"
               onMouseEnter={() => setIsHovered4(true)}
               onMouseLeave={() => setIsHovered4(false)}
             >
@@ -101,7 +101,7 @@ const UserHeader4 = () => {
               </div>
             </li>
             <li
-              className="relative text-white h-full flex items-center"
+              className="relative  h-full flex items-center"
               onMouseEnter={() => setIsHovered5(true)}
               onMouseLeave={() => setIsHovered5(false)}
             >
@@ -117,7 +117,7 @@ const UserHeader4 = () => {
               </div>
             </li>
             <li
-              className="relative text-white h-full flex items-center"
+              className="relative  h-full flex items-center"
               onMouseEnter={() => setIsHovered6(true)}
               onMouseLeave={() => setIsHovered6(false)}
             >
@@ -133,7 +133,7 @@ const UserHeader4 = () => {
               </div>
             </li>
             <li
-              className="relative text-white h-full flex items-center"
+              className="relative  h-full flex items-center"
               onMouseEnter={() => setIsHovered7(true)}
               onMouseLeave={() => setIsHovered7(false)}
             >
@@ -149,7 +149,7 @@ const UserHeader4 = () => {
               </div>
             </li>
             <li
-              className="relative text-white h-full flex items-center"
+              className="relative  h-full flex items-center"
               onMouseEnter={() => setIsHovered8(true)}
               onMouseLeave={() => setIsHovered8(false)}
             >
@@ -165,7 +165,7 @@ const UserHeader4 = () => {
               </div>
             </li>
             <li
-              className="relative text-white h-full flex items-center"
+              className="relative  h-full flex items-center"
               onMouseEnter={() => setIsHovered9(true)}
               onMouseLeave={() => setIsHovered9(false)}
             >
@@ -181,7 +181,7 @@ const UserHeader4 = () => {
               </div>
             </li>
             <li
-              className="relative text-white h-full flex items-center"
+              className="relative  h-full flex items-center"
               onMouseEnter={() => setIsHovered10(true)}
               onMouseLeave={() => setIsHovered10(false)}
             >
@@ -197,7 +197,7 @@ const UserHeader4 = () => {
               </div>
             </li>
             <li
-              className="relative text-white h-full flex items-center"
+              className="relative h-full flex items-center"
               onMouseEnter={() => setIsHovered11(true)}
               onMouseLeave={() => setIsHovered11(false)}
             >

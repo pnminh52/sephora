@@ -63,7 +63,7 @@ const ProductDetails = ({ products }) => {
         </div>
         <div className="flex justify-between py-4">
         <div className="w-1/2">
-        <img src={product.thumbnail} alt="" />
+        {/* <img src={product.thumbnail} alt="" /> */}
 
         </div>
         <div className=" w-1/2">
