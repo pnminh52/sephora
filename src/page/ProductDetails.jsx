@@ -17,11 +17,11 @@ const ProductDetails = ({ products }) => {
     );
   }
   return (
-    <div>
+    <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="hidden sm:block">
         <UserHeader3 />
       </div>
-      <div className="container mx-auto px-4">
+      <div className="">
         <div className="flex text-sm text-gray-600 py-2 sm:py-4 ">
           <p className=" cursor-pointer">{product.category}</p>
           <p className=" before:content-['›'] before:mx-1.5 cursor-pointer">

@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 const UserHeader3 = () => {
   return (
-    <div>
-       <div className=" bg-white mx-auto px-4 max-w-screen-xl sm:hidden py-2 border-b border-gray-200 container flex justify-between items-center">
+    <div className="block sm:hidden">
+      <div className=" bg-white mx-auto px-4 max-w-screen-xl sm:hidden py-2 border-b border-gray-200 container flex justify-between items-center">
         <div>
           <h1 className="text-sm font-semibold">
             Sign In for FREE Shipping 🚚
@@ -88,74 +88,9 @@ const UserHeader3 = () => {
         </div>
       </div>
 
-      <div className="bg-black h-10 relative hidden sm:block">
-        <div className="bg-black h-10 hidden sm:block mx-auto px-8 max-w-screen-xl">
-          <ul className="flex justify-between items-center h-full">
-            <li className="text-white">
-              <a href="" className="inline-block">
-                New
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Brands
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Makeup
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Skincare
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Hair
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Fragrance
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Tools & Brushes
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Bath & Body
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Mini Size
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Beauty Under $20
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Gifts & Gift Cards
-              </a>
-            </li>
-            <li className="text-white">
-              <a href="" className="inline-block">
-                Sale & Offers
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+     
     </div>
-  )
-}
+  );
+};
 
-export default UserHeader3
+export default UserHeader3;

@@ -5,7 +5,7 @@ const Homepage = ({ products }) => {
   return (
     <div>
       <UserHeader3 />
-      <div className="h-1000 max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="h-1000 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div>
           <ChosenProduct products={products} />
         </div>
