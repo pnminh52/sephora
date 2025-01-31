@@ -10,7 +10,6 @@ const AddToBasket = () => {
   return (
     <div className="block sm:hidden z-50 fixed bottom-17 bg-white w-full h-16 flex items-center sm:border-b-0">
       <div className="relative bg-[#CF112C] hover:bg-red-600 transition ease-in-out cursor-pointer px-4 py-2 mx-4 w-full text-white flex justify-center items-center rounded-full">
-        {/* Dropdown chọn số lượng */}
         <div className="absolute left-0 border-r px-3 h-full border-white flex justify-center items-center ">
           <select
             className="appearance-none  bg-transparent font-thin text-white cursor-pointer outline-none"
@@ -49,7 +48,6 @@ const AddToBasket = () => {
           </svg>
         </div>
 
-        {/* Nút Add to Basket */}
         <button className="cursor-pointer text-xs font-semibold">
           Add to Basket
           <p className="cursor-pointer text-xs font-normal">Get It Shipped</p>

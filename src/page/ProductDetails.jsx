@@ -93,7 +93,7 @@ const ProductDetails = ({ products }) => {
           </div>
         </div>
       </div>
-      <AddToBasket />
+      {/* <AddToBasket /> */}
     </div>
   );
 };
