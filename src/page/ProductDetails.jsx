@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import AddToBasket from "./../component/user/AddToBasket";
 import UserHeader3 from "../component/user/UserHeader3";
 const ProductDetails = ({ products }) => {
   const { id } = useParams();
@@ -93,7 +92,7 @@ const ProductDetails = ({ products }) => {
           </div>
         </div>
       </div>
-      {/* <AddToBasket /> */}
+  
     </div>
   );
 };
