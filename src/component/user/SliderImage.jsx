@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 
 const SliderImage = () => {
   return (
-    <div className='relative'>
-       <div
-        className=" p-2 flex gap-2 overflow-x-auto flex-nowrap"
+    <div className="relative">
+      <div
+        className=" p-1 flex gap-2  items-center overflow-x-auto flex-nowrap"
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {/* Box 1 */}
@@ -20,7 +20,7 @@ const SliderImage = () => {
               alt=""
             />
           </picture>
-          <div className="bg-[#FFECE5] w-full rounded-b-md  min-h-[120px] flex flex-col justify-between">
+          <div className="bg-[#FFECE5] w-full rounded-b-md  min-h-[125px] flex flex-col justify-between">
             <div className="p-4 h-full">
               <h1 className="font-semibold cursor-pointer text-md sm:text-xl">
                 New Rare Beauty by Selena Gomez
@@ -49,7 +49,7 @@ const SliderImage = () => {
               alt=""
             />
           </picture>
-          <div className="bg-[#D7437F] w-full rounded-b-md  min-h-[120px] flex flex-col justify-between">
+          <div className="bg-[#D7437F] w-full rounded-b-md  min-h-[125px] flex flex-col justify-between">
             <div className="p-4 h-full">
               <h1 className="text-white font-semibold cursor-pointer text-md sm:text-xl">
                 Valentine's Day Gifts
@@ -80,7 +80,7 @@ const SliderImage = () => {
               data-comp="BaseComponent "
             />
           </picture>
-          <div className="bg-[#481D53] w-full rounded-b-md  min-h-[120px] flex flex-col justify-between">
+          <div className="bg-[#481D53] w-full rounded-b-md  min-h-[125px] flex flex-col justify-between">
             <div className="p-4 h-full">
               <h1 className="text-white font-semibold cursor-pointer text-md sm:text-xl">
                 New Caudalie Premier Cru Cream
@@ -98,29 +98,96 @@ const SliderImage = () => {
         {/* Box 4 */}
         <div className="min-w-[315px] md:min-w-[545px] overflow-hidden rounded-md">
           <picture>
-          <source media="(min-width: 768px)" srcset="https://www.sephora.com/contentimages/2025-02-bi-gamification-optimization-passport-site-desktop-mobile-RWD-hero-banner-evergreen-us-can_img-only.jpg?imwidth=545 1x, https://www.sephora.com/contentimages/2025-02-bi-gamification-optimization-passport-site-desktop-mobile-RWD-hero-banner-evergreen-us-can_img-only.jpg?imwidth=1090 2x"/>
-          <img className="w-full rounded-t-md" src="https://www.sephora.com/contentimages/2025-02-bi-gamification-optimization-passport-site-desktop-mobile-RWD-hero-banner-evergreen-us-can_img-only.jpg?imwidth=315" srcset="https://www.sephora.com/contentimages/2025-02-bi-gamification-optimization-passport-site-desktop-mobile-RWD-hero-banner-evergreen-us-can_img-only.jpg?imwidth=315 1x, https://www.sephora.com/contentimages/2025-02-bi-gamification-optimization-passport-site-desktop-mobile-RWD-hero-banner-evergreen-us-can_img-only.jpg?imwidth=630 2x" loading="lazy" role="presentation" alt="" class="css-i1gf52 e15t7owz0" data-comp="Image StyledComponent BaseComponent "/>
+            <source
+              media="(min-width: 768px)"
+              srcset="https://www.sephora.com/contentimages/2025-02-bi-gamification-optimization-passport-site-desktop-mobile-RWD-hero-banner-evergreen-us-can_img-only.jpg?imwidth=545 1x, https://www.sephora.com/contentimages/2025-02-bi-gamification-optimization-passport-site-desktop-mobile-RWD-hero-banner-evergreen-us-can_img-only.jpg?imwidth=1090 2x"
+            />
+            <img
+              className="w-full rounded-t-md"
+              src="https://www.sephora.com/contentimages/2025-02-bi-gamification-optimization-passport-site-desktop-mobile-RWD-hero-banner-evergreen-us-can_img-only.jpg?imwidth=315"
+              srcset="https://www.sephora.com/contentimages/2025-02-bi-gamification-optimization-passport-site-desktop-mobile-RWD-hero-banner-evergreen-us-can_img-only.jpg?imwidth=315 1x, https://www.sephora.com/contentimages/2025-02-bi-gamification-optimization-passport-site-desktop-mobile-RWD-hero-banner-evergreen-us-can_img-only.jpg?imwidth=630 2x"
+              loading="lazy"
+              role="presentation"
+              alt=""
+              class="css-i1gf52 e15t7owz0"
+              data-comp="Image StyledComponent BaseComponent "
+            />
           </picture>
-          <div className="bg-[#C6B8DC] w-full rounded-b-md  min-h-[120px] flex flex-col justify-between">
+          <div className="bg-[#C6B8DC] w-full rounded-b-md  min-h-[125px] flex flex-col justify-between">
             <div className="p-4 h-full">
               <h1 className="font-semibold cursor-pointer text-md sm:text-xl">
-              A New Beauty Insider Challenge 
+                A New Beauty Insider Challenge
               </h1>
               <p className=" text-sm py-1">
-              Complete tasks and earn up to 500 points. Terms apply.
+                Complete tasks and earn up to 500 points. Terms apply.
               </p>
               <h1 className=" font-semibold  cursor-pointer text-sm">
-              JOIN THE CHALLENGE ▸
+                JOIN THE CHALLENGE ▸
               </h1>
             </div>
           </div>
         </div>
       </div>
       <div>
-        <button className='absolute top-1/2 z-1'>next</button>
+      {/* <button className="cursor-pointer absolute flex p-2 items-center justify-center left-3 top-1/2 transform -translate-y-1/2 z-1 bg-black rounded-full">
+  <svg
+    className="w-7 h-7 text-white"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+  >
+    <g>
+      <line
+        x1="8.62"
+        x2="15.38"
+        y1="12"
+        y2="5.5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+      <line
+        x1="8.62"
+        x2="15.38"
+        y1="12"
+        y2="18.5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+    </g>
+  </svg>
+</button> */}
+
+<button className="cursor-pointer absolute flex p-2 items-center justify-center right-3 top-1/2 transform -translate-y-1/2 z-1 bg-black rounded-full">
+  <svg
+    className="w-7 h-7 rotate-180 text-white"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+  >
+    <g>
+      <line
+        x1="8.62"
+        x2="15.38"
+        y1="12"
+        y2="5.5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+      <line
+        x1="8.62"
+        x2="15.38"
+        y1="12"
+        y2="18.5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+    </g>
+  </svg>
+</button>
+
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SliderImage
+export default SliderImage;
