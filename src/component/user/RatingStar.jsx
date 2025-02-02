@@ -5,7 +5,7 @@ const RatingStars = ({ rating }) => {
   const halfStar = rating % 1 !== 0; 
 
   return (
-    <div className="flex items-center">
+    <div className="flex items-center w-16">
       {Array.from({ length: fullStars }, (_, index) => (
         <FaStar key={index} className="text-black" style={{ strokeWidth: 0.1 }} />
       ))}
