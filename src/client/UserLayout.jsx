@@ -10,7 +10,7 @@ const UserLayout = () => {
   return (
     <div>
       <UserHeader1 />
-      <div className="sticky top-0 z-10 md:static">
+      <div className="sticky top-0 z-999 md:static">
         <UserHeader2 />
       </div>
       <UserHeader4 />

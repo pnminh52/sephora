@@ -15,7 +15,7 @@ const UserHeader4 = () => {
   const [isHovered11, setIsHovered11] = useState(false);
   return (
     <div className="hidden sm:block">
-      <div className="bg-black h-12 relative">
+      <div className="bg-black h-12 relative ">
         <div className="   h-12 mx-auto px-8 max-w-screen-xl flex items-center">
           <ul className="flex text-white text-sm justify-between items-center gap-4 w-full h-full ">
             <li
@@ -302,7 +302,7 @@ const UserHeader4 = () => {
               </div>
             </div>
           </div>
-          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-0"></div>
+          <div className="absolute  left-0 w-full bg-gray-500 opacity-50 h-600 z-2"></div>
         </div>
       )}
       {isHovered1 && (
@@ -418,7 +418,7 @@ const UserHeader4 = () => {
               </div>
             </div>
           </div>
-          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-0"></div>
+          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-2"></div>
         </div>
       )}
       {isHovered2 && (
@@ -642,7 +642,7 @@ const UserHeader4 = () => {
               </div>
             </div>
           </div>
-          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-0"></div>
+          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-2"></div>
         </div>
       )}
       {isHovered3 && (
@@ -876,7 +876,7 @@ const UserHeader4 = () => {
               </div>
             </div>
           </div>
-          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-0"></div>
+          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-2"></div>
         </div>
       )}
       {isHovered4 && (
@@ -1122,7 +1122,7 @@ const UserHeader4 = () => {
               </div>
             </div>
           </div>
-          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-0"></div>
+          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-2"></div>
         </div>
       )}
       {isHovered5 && (
@@ -1273,7 +1273,7 @@ const UserHeader4 = () => {
               </div>
             </div>
           </div>
-          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-0"></div>
+          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-2"></div>
         </div>
       )}
       {isHovered6 && (
@@ -1435,7 +1435,7 @@ const UserHeader4 = () => {
               </div>
             </div>
           </div>
-          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-0"></div>
+          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-2"></div>
         </div>
       )}
       {isHovered7 && (
@@ -1592,7 +1592,7 @@ const UserHeader4 = () => {
               </div>
             </div>
           </div>
-          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-0"></div>
+          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-2"></div>
         </div>
       )}
       {isHovered8 && (
@@ -1667,7 +1667,7 @@ const UserHeader4 = () => {
               </div>
             </div>
           </div>
-          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-0"></div>
+          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-2"></div>
         </div>
       )}
       {isHovered9 && (
@@ -1740,7 +1740,7 @@ const UserHeader4 = () => {
               </div>
             </div>
           </div>
-          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-0"></div>
+          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-2"></div>
         </div>
       )}
       {isHovered10 && (
@@ -1869,7 +1869,7 @@ const UserHeader4 = () => {
               </div>
             </div>
           </div>
-          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-0"></div>
+          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-2"></div>
         </div>
       )}
       {isHovered11 && (
@@ -1935,7 +1935,7 @@ const UserHeader4 = () => {
               </div>
             </div>
           </div>
-          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-0"></div>
+          <div className="absolute left-0 w-full bg-gray-500 opacity-50 h-600 z-2"></div>
         </div>
       )}
     </div>

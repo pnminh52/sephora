@@ -2,9 +2,9 @@ import React from 'react'
 
 const SliderImage = () => {
   return (
-    <div>
+    <div className='relative'>
        <div
-        className="p-2 flex gap-2 overflow-x-auto flex-nowrap"
+        className=" p-2 flex gap-2 overflow-x-auto flex-nowrap"
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {/* Box 1 */}
@@ -115,6 +115,9 @@ const SliderImage = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <button className='absolute top-1/2 z-1'>next</button>
       </div>
     </div>
   )
