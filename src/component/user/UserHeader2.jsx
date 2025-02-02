@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 const UserHeader2 = () => {
   const [isHovered0, setIsHovered0] = useState(false);
-  const [isHovered1, setIsHovered1] = useState(true);
+  const [isHovered1, setIsHovered1] = useState(false);
   return (
     <div>
       <div className="bg-white max-w-screen-xl border-b sm:border-b-0 border-gray-300  mx-auto px-4 sm:px-6 lg:px-8 ">

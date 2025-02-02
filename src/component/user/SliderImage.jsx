@@ -4,7 +4,7 @@ const SliderImage = () => {
   return (
     <div className="relative">
       <div
-        className=" p-1 flex gap-2  items-center overflow-x-auto flex-nowrap"
+        className=" p-2 flex gap-2  items-center overflow-x-auto flex-nowrap"
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {/* Box 1 */}
