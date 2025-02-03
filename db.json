@@ -14,7 +14,7 @@
       "status": "",
       "productLine": "",
       "rating": 4.5,
-      "ratingCount": 120,
+      "ratingCount": 1000,
       "oldPrice": 50,
       "priceAfterDiscount": 48,
       "discount": "20%",
@@ -27,7 +27,7 @@
     },
     {
       "id": "1",
-      "name": "ILIA",
+      "name": "HUDA BEAUTY",
       "description": "A nourishing cream for dry skin.",
       "content": "Skin Rewind Blurring Foundation and Concealer Complexion Stick",
       "images": [
@@ -35,113 +35,14 @@
         "https://picsum.photos/200/301",
         "https://picsum.photos/200/302"
       ],
-      "thumbnail": "https://www.sephora.com/productimages/sku/s2739589-main-zoom.jpg?pb=clean-at-sephora&imwidth=122",
+      "thumbnail": "https://www.sephora.com/productimages/sku/s2828929-main-zoom.jpg?imwidth=122",
       "status": "",
       "productLine": "",
       "rating": 4.5,
-      "ratingCount": 120,
+      "ratingCount": 1000,
       "oldPrice": 50,
-      "priceAfterDiscount": 48,
-      "discount": "20%",
-      "tierTrending": 1,
-      "rewardPoints": 20,
-      "voucher": "Get 10% off next purchase",
-      "category": "Skincare",
-      "position":"Face",
-      "department":"Foundation"
-    },
-    {
-      "id": "1",
-      "name": "ILIA",
-      "description": "A nourishing cream for dry skin.",
-      "content": "Skin Rewind Blurring Foundation and Concealer Complexion Stick",
-      "images": [
-        "https://picsum.photos/200/300",
-        "https://picsum.photos/200/301",
-        "https://picsum.photos/200/302"
-      ],
-      "thumbnail": "https://www.sephora.com/productimages/sku/s2739589-main-zoom.jpg?pb=clean-at-sephora&imwidth=122",
-      "status": "",
-      "productLine": "",
-      "rating": 4.5,
-      "ratingCount": 120,
-      "oldPrice": 50,
-      "priceAfterDiscount": 48,
-      "discount": "20%",
-      "tierTrending": 1,
-      "rewardPoints": 20,
-      "voucher": "Get 10% off next purchase",
-      "category": "Skincare",
-      "position":"Face",
-      "department":"Foundation"
-    },
-    {
-      "id": "1",
-      "name": "ILIA",
-      "description": "A nourishing cream for dry skin.",
-      "content": "Skin Rewind Blurring Foundation and Concealer Complexion Stick",
-      "images": [
-        "https://picsum.photos/200/300",
-        "https://picsum.photos/200/301",
-        "https://picsum.photos/200/302"
-      ],
-      "thumbnail": "https://www.sephora.com/productimages/sku/s2739589-main-zoom.jpg?pb=clean-at-sephora&imwidth=122",
-      "status": "",
-      "productLine": "",
-      "rating": 4.5,
-      "ratingCount": 120,
-      "oldPrice": 50,
-      "priceAfterDiscount": 48,
-      "discount": "20%",
-      "tierTrending": 1,
-      "rewardPoints": 20,
-      "voucher": "Get 10% off next purchase",
-      "category": "Skincare",
-      "position":"Face",
-      "department":"Foundation"
-    },
-    {
-      "id": "1",
-      "name": "ILIA",
-      "description": "A nourishing cream for dry skin.",
-      "content": "Skin Rewind Blurring Foundation and Concealer Complexion Stick",
-      "images": [
-        "https://picsum.photos/200/300",
-        "https://picsum.photos/200/301",
-        "https://picsum.photos/200/302"
-      ],
-      "thumbnail": "https://www.sephora.com/productimages/sku/s2739589-main-zoom.jpg?pb=clean-at-sephora&imwidth=122",
-      "status": "",
-      "productLine": "",
-      "rating": 4.5,
-      "ratingCount": 120,
-      "oldPrice": 50,
-      "priceAfterDiscount": 48,
-      "discount": "20%",
-      "tierTrending": 1,
-      "rewardPoints": 20,
-      "voucher": "Get 10% off next purchase",
-      "category": "Skincare",
-      "position":"Face",
-      "department":"Foundation"
-    },
-    {
-      "id": "1",
-      "name": "ILIA",
-      "description": "A nourishing cream for dry skin.",
-      "content": "Skin Rewind Blurring Foundation and Concealer Complexion Stick",
-      "images": [
-        "https://picsum.photos/200/300",
-        "https://picsum.photos/200/301",
-        "https://picsum.photos/200/302"
-      ],
-      "thumbnail": "https://www.sephora.com/productimages/sku/s2739589-main-zoom.jpg?pb=clean-at-sephora&imwidth=122",
-      "status": "",
-      "productLine": "",
-      "rating": 4.5,
-      "ratingCount": 120,
-      "oldPrice": 50,
-      "priceAfterDiscount": 48,
+      "priceAfterDiscount": 22,
+      "maxPriceAfterDiscount":39,
       "discount": "20%",
       "tierTrending": 1,
       "rewardPoints": 20,
@@ -150,6 +51,7 @@
       "position":"Face",
       "department":"Foundation"
     }
+ 
   
   ]
 }

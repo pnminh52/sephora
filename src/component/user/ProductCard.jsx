@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import RatingStars from './RatingStar';
+import RatingStars from "./RatingStar";
 const ProductCard = ({ products }) => {
   const navigate = useNavigate();
 
@@ -13,11 +13,11 @@ const ProductCard = ({ products }) => {
       className="overflow-x-auto"
       style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
     >
-      <div className="grid grid-cols-6 gap-2 min-w-[1200px] px-4 md:px-6 lg:px-16  mx-auto">
+      <div className="grid grid-cols-6 gap-3 min-w-[1200px] px-4 md:px-6 lg:px-16 py-2  mx-auto">
         {products.length > 0 ? (
           products.map((product) => (
             <div
-              className="border border-red-600 p-4 rounded-lg cursor-pointer hover:shadow-lg transition duration-300"
+              className=" p-3 shadow-[0px_0px_2.5px_2.5px_rgba(0,0,0,0.1)] rounded-sm cursor-pointer transition duration-300 transform hover:translate-y-[-5px]"
               key={product.id}
               onClick={() => handleProductClick(product.id)}
             >
@@ -26,12 +26,22 @@ const ProductCard = ({ products }) => {
                 src={product.thumbnail}
                 alt={product.name}
               />
-              <h2 className="text-lg font-semibold mt-2">{product.name}</h2>
-              <p className="text-gray-600">{product.category}</p>
-              <p className="text-red-500 font-bold">
-                {product.priceAfterDiscount}
+              <h2 className="text-sm font-semibold mt-2">{product.name}</h2>
+              <p className="text-black  text-sm line-clamp-2 ">
+                {product.content}
               </p>
-              <p><RatingStars rating={product.rating}/></p>
+              <p className="text-black text-md py-1 font-bold">
+                {product.priceAfterDiscount}.00$
+                {product.maxPriceAfterDiscount &&
+                  ` - ${product.maxPriceAfterDiscount}.00$`}
+              </p>
+
+              <div className="flex  items-center gap-2 ">
+                <p>
+                  <RatingStars rating={product.rating} />
+                </p>
+                <p className="text-sm">{product.ratingCount}</p>
+              </div>
             </div>
           ))
         ) : (
