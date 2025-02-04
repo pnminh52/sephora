@@ -17,15 +17,30 @@ const ProductCard = ({ products }) => {
         {products.length > 0 ? (
           products.map((product) => (
             <div
-              className=" p-3 shadow-[0px_0px_2.5px_2.5px_rgba(0,0,0,0.1)] rounded-sm cursor-pointer transition duration-300 transform hover:translate-y-[-5px]"
+              className="group p-3 shadow-[0px_0px_2.5px_2.5px_rgba(0,0,0,0.1)] rounded-sm cursor-pointer transition duration-300 transform hover:translate-y-[-5px]"
               key={product.id}
               onClick={() => handleProductClick(product.id)}
             >
-              <img
-                className="w-full h-auto object-cover rounded"
-                src={product.thumbnail}
-                alt={product.name}
-              />
+              <div className="relative ">
+  <img
+    className="w-full h-auto object-cover rounded"
+    src={product.thumbnail}
+    alt={product.name}
+  />
+  <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-[#404040] duration-300 ease-in-out hover:bg-[#757575] text-white text-sm w-full py-1 rounded-sm text-center font-semibold opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+    <p>Quicklook</p>
+  </div>
+</div>
+
+
+              <div>
+                <p className="absolute top-1 left-1 text-[10px] uppercase bg-black text-white rounded-sm px-2 font-semibold">
+                  {product.status}
+                </p>
+                <p className="absolute top-5.5 left-1 text-[10px] uppercase bg-black text-white rounded-sm px-2 font-semibold">
+                  {product.productLine}
+                </p>
+              </div>
               <h2 className="text-sm font-semibold mt-2">{product.name}</h2>
               <p className="text-black  text-sm line-clamp-2 ">
                 {product.content}
