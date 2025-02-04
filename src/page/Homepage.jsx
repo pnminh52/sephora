@@ -1,7 +1,7 @@
 import React from "react";
 import UserHeader3 from "./../component/user/UserHeader3";
 import SliderImage from './../component/user/SliderImage';
-import ProductCard from './../component/user/ProductCard';
+import ChosenForYou from '../component/user/ChosenForYou';
 
 const Homepage = ({products }) => {
   return (
@@ -12,7 +12,7 @@ const Homepage = ({products }) => {
         <h1 className="font-semibold text-xl sm:text-md">Chosen For You</h1>
         <a href="" className="text-blue-600 hover:underline">Show more</a>
       </div>
-      <ProductCard products={products} />
+      <ChosenForYou products={products} />
     </div>
   );
 };

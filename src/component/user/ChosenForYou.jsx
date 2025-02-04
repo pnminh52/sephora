@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import RatingStars from "./RatingStar";
-const ProductCard = ({ products }) => {
+const ChosenForYou = ({ products }) => {
   const navigate = useNavigate();
 
   const handleProductClick = (id) => {
@@ -22,25 +22,32 @@ const ProductCard = ({ products }) => {
               onClick={() => handleProductClick(product.id)}
             >
               <div className="relative ">
-  <img
-    className="w-full h-auto object-cover rounded"
-    src={product.thumbnail}
-    alt={product.name}
-  />
-  <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-[#404040] duration-300 ease-in-out hover:bg-[#757575] text-white text-sm w-full py-1 rounded-sm text-center font-semibold opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-    <p>Quicklook</p>
-  </div>
-</div>
-
+                <img
+                  className="w-full h-auto object-cover rounded"
+                  src={product.thumbnail}
+                  alt={product.name}
+                />
+                <div className="absolute  bottom-2 left-1/2 -translate-x-1/2 bg-[#404040]  ease-in-out hover:bg-[#757575] text-white text-sm w-full py-1 rounded-sm text-center font-semibold opacity-0 transition-opacity duration-300 group-hover:opacity-90">
+                  <p>Quicklook</p>
+                </div>
+              </div>
 
               <div>
-                <p className="absolute top-1 left-1 text-[10px] uppercase bg-black text-white rounded-sm px-2 font-semibold">
-                  {product.status}
-                </p>
-                <p className="absolute top-5.5 left-1 text-[10px] uppercase bg-black text-white rounded-sm px-2 font-semibold">
+                {product.status && (
+                  <p className="absolute top-1 left-1 text-[10px] uppercase bg-black text-white rounded-sm px-2 font-semibold">
+                    {product.status}
+                  </p>
+                )}
+
+                <p
+                  className={`absolute left-1 text-[10px] uppercase bg-black text-white rounded-sm px-2 font-semibold ${
+                    product.status ? "top-[22px]" : "top-1"
+                  }`}
+                >
                   {product.productLine}
                 </p>
               </div>
+
               <h2 className="text-sm font-semibold mt-2">{product.name}</h2>
               <p className="text-black  text-sm line-clamp-2 ">
                 {product.content}
@@ -55,7 +62,13 @@ const ProductCard = ({ products }) => {
                 <p>
                   <RatingStars rating={product.rating} />
                 </p>
-                <p className="text-sm">{product.ratingCount}</p>
+                <p className="text-sm">
+                  {product.ratingCount >= 1000
+                    ? (product.ratingCount / 1000).toFixed(
+                        product.ratingCount % 1000 === 0 ? 0 : 1
+                      ) + "k"
+                    : product.ratingCount}
+                </p>
               </div>
             </div>
           ))
@@ -69,4 +82,4 @@ const ProductCard = ({ products }) => {
   );
 };
 
-export default ProductCard;
+export default ChosenForYou;
