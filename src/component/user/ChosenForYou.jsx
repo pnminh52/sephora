@@ -25,9 +25,10 @@ const handlePrev = () => {
   const visibleProducts = products.slice(startIndex, startIndex + 6);
 
   return (
-    <div className="relative">
+    <div className="relative w-full overflow-hidden">
       <div className="overflow-hidden">
-        <div className="grid grid-cols-6 gap-3 px-4 md:px-6 lg:px-16 py-2 mx-auto min-w-[1200px]">
+        <div className="relative flex transition-transform duration-500 ease-in-out grid grid-cols-6 gap-3 px-4 md:px-6 lg:px-16 py-2 mx-auto min-w-[1200px]"
+             style={{ transform: `translateX(-${startIndex * (100 / 6)}%)` }}>
           {visibleProducts.length > 0 ? (
             visibleProducts.map((product) => (
               <div
@@ -96,7 +97,7 @@ const handlePrev = () => {
 
       {startIndex > 0 && (
         <button
-          className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black text-white p-2 rounded-full shadow-lg hover:bg-gray-800"
+          className=" absolute top-1/2 left-0 transform -translate-y-1/2 bg-black text-white p-2 rounded-full shadow-lg hover:bg-gray-800"
           onClick={handlePrev}
         >
           &#10094;
