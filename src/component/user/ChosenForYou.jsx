@@ -34,7 +34,7 @@ const ChosenForYou = ({ products }) => {
         <button
           onClick={prevSlider}
           className={`absolute cursor-pointer left-6 lg:left-10 top-1/2 -translate-y-1/2 bg-black text-white w-11 h-11 rounded-full z-50 flex items-center justify-center transition-opacity ${
-            isBeginning ? "opacity-0 pointer-events-none" : "opacity-60"
+            isBeginning ? "opacity-0 pointer-events-none" : "opacity-70"
           }`}
         >
           <svg
@@ -66,7 +66,7 @@ const ChosenForYou = ({ products }) => {
         <button
           onClick={nextSlider}
           className={`absolute cursor-pointer right-6 lg:right-10 top-1/2 -translate-y-1/2 bg-black text-white w-11 h-11 rounded-full z-50 flex items-center justify-center transition-opacity ${
-            isEnd ? "opacity-0 pointer-events-none" : "opacity-60"
+            isEnd ? "opacity-0 pointer-events-none" : "opacity-70"
           }`}
         >
           <svg
@@ -149,7 +149,7 @@ const ChosenForYou = ({ products }) => {
                 <p className="text-black lg:text-sm text-xs line-clamp-2">
                   {product.content}
                 </p>
-                <p className="text-black text-sm py-1 font-bold">
+                <p className="text-black text-sm lg:text-[17px] py-1 font-bold">
                   {product.priceAfterDiscount}.00$
                   {product.maxPriceAfterDiscount &&
                     ` - ${product.maxPriceAfterDiscount}.00$`}
