@@ -114,7 +114,7 @@ const ChosenForYou = ({ products }) => {
               {" "}
               {/* Căn lề trái phải 2 đơn vị */}
               <div
-                className="relative shadow-[0_2px_3px_rgba(0,0,0,0.1),0_-2px_3px_rgba(0,0,0,0.1)] 
+                className="relative shadow-[0_2px_2px_2px_rgba(0,0,0,0.1),0_-2px_2px_2px_rgba(0,0,0,0.1)] 
       group p-2.5 rounded-sm cursor-pointer transition duration-300 
       transform hover:translate-y-[-5px]"
                 onClick={() => handleProductClick(product.id)}
@@ -149,12 +149,12 @@ const ChosenForYou = ({ products }) => {
                 <p className="text-black lg:text-sm text-xs line-clamp-2">
                   {product.content}
                 </p>
-                <p className="text-black text-md py-1 font-bold">
+                <p className="text-black text-sm py-1 font-bold">
                   {product.priceAfterDiscount}.00$
                   {product.maxPriceAfterDiscount &&
                     ` - ${product.maxPriceAfterDiscount}.00$`}
                 </p>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center mt-0 gap-2">
                   <p>
                     <RatingStars rating={product.rating} />
                   </p>
