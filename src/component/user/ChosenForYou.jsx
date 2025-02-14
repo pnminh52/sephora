@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -8,31 +8,111 @@ import "swiper/css/navigation";
 
 const ChosenForYou = ({ products }) => {
   const navigate = useNavigate();
-
+  const swiperRef = useRef(null);
+  const [isBeginning, setIsBeginning]=useState(true)
+  const [isEnd, setIsEnd]=useState(false)
   const handleProductClick = (id) => {
     navigate(`/products/${id}`);
   };
 
-  return (
-    <div className="relative px-4 md:px-6 lg:px-16 py-2 min-w-[500px] mx-auto flex-nowrap overflow-x-auto">
-<Swiper
-  modules={[Navigation]}
-  navigation={true} // Luôn bật navigation
-  spaceBetween={10}
-  slidesPerView={6} // Hiển thị 6 sản phẩm trên mọi kích thước
-  centeredSlides={false}
-  breakpoints={{
-    320: { slidesPerView: 3 },
-    1024: { slidesPerView: 6 },
-  }}
-  className="relative"
->
+  const nextSlider = () => {
+    swiperRef.current?.slideNext();
+    setIsBeginning(swiperRef.current.isBeginning);
+    setIsEnd(swiperRef.current.isEnd);
+  };
 
+  const prevSlider = () => {
+    swiperRef.current?.slidePrev();
+    setIsBeginning(swiperRef.current.isBeginning);
+    setIsEnd(swiperRef.current.isEnd);
+  };
+
+  return (
+    <div className="relative px-4 md:px-6 lg:px-16 py-2 min-w-[500px] mx-auto">
+      {/* Custom Next/Prev Buttons */}
+      <button
+        onClick={prevSlider}
+        className={`absolute cursor-pointer left-6 lg:left-10 top-1/2 -translate-y-1/2 bg-black text-white w-12 h-12 rounded-full z-50 flex items-center justify-center transition-opacity ${
+          isBeginning ? "opacity-0 pointer-events-none" : "opacity-60"
+        }`}
+      >
+          <svg
+    className="w-8 h-8  text-white"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+  >
+    <g>
+      <line
+        x1="8.62"
+        x2="15.38"
+        y1="12"
+        y2="5.5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+      <line
+        x1="8.62"
+        x2="15.38"
+        y1="12"
+        y2="18.5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+    </g>
+  </svg>
+      </button>
+      <button
+        onClick={nextSlider}
+        className={`absolute cursor-pointer right-6 lg:right-10 top-1/2 -translate-y-1/2 bg-black text-white w-12 h-12 rounded-full z-50 flex items-center justify-center transition-opacity ${
+          isEnd ? "opacity-0 pointer-events-none" : "opacity-60"
+        }`}
+      >
+          <svg
+    className="w-8 h-8 rotate-180 text-white"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+  >
+    <g>
+      <line
+        x1="8.62"
+        x2="15.38"
+        y1="12"
+        y2="5.5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+      <line
+        x1="8.62"
+        x2="15.38"
+        y1="12"
+        y2="18.5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+    </g>
+  </svg>
+      </button>
+
+      {/* Swiper */}
+      <Swiper
+        modules={[Navigation]}
+        onSwiper={(swiper) => (swiperRef.current = swiper)} // Gán Swiper instance
+        spaceBetween={10}
+        slidesPerView={6}
+        breakpoints={{
+          320: { slidesPerView: 3 },
+          1024: { slidesPerView: 6 },
+        }}
+        className="border-red-500 border "
+      >
         {products.length > 0 ? (
           products.map((product) => (
             <SwiperSlide key={product.id}>
-              <div
-                className="group p-3 shadow-md rounded-sm cursor-pointer transition duration-300 transform hover:translate-y-[-5px]"
+             <div className=" pt-2 pb-2">
+             <div
+                className=" border border-red-500 group p-3 shadow-lg rounded-sm cursor-pointer transition duration-300 transform hover:translate-y-[-5px]"
                 onClick={() => handleProductClick(product.id)}
               >
                 <div className="relative">
@@ -45,7 +125,7 @@ const ChosenForYou = ({ products }) => {
                     <p>Quicklook</p>
                   </div>
                 </div>
-                <h2 className="text-sm font-semibold mt-2">{product.name}</h2>
+                <h2 className="text-sm font-semibold mt-2 truncate">{product.name}</h2>
                 <p className="text-black text-sm line-clamp-2">{product.content}</p>
                 <p className="text-black text-md py-1 font-bold">
                   {product.priceAfterDiscount}.00$
@@ -62,6 +142,7 @@ const ChosenForYou = ({ products }) => {
                   </p>
                 </div>
               </div>
+             </div>
             </SwiperSlide>
           ))
         ) : (
