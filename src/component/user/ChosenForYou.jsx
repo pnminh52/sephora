@@ -114,7 +114,7 @@ const ChosenForYou = ({ products }) => {
               {" "}
               {/* Căn lề trái phải 2 đơn vị */}
               <div
-                className="relative shadow-[0_2px_2px_2px_rgba(0,0,0,0.1),0_-2px_2px_2px_rgba(0,0,0,0.1)] 
+                className="relative shadow-[0_1px_1px_1px_rgba(0,0,0,0.1),0_-1px_1px_1px_rgba(0,0,0,0.1)] 
       group p-2.5 rounded-sm cursor-pointer transition duration-300 
       transform hover:translate-y-[-5px]"
                 onClick={() => handleProductClick(product.id)}
